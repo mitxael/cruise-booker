@@ -42,7 +42,7 @@
 \begin_body
 
 \begin_layout Title
-PERCORSO INTERATTIVO PER L'APPRENDIMENTO DEGLI ALGORITMI E STRUTTURE DATI
+Percorso Interattivo per l'Apprendimento degli Algoritmi e Strutture Dati
 \end_layout
 
 \begin_layout Author
@@ -301,20 +301,143 @@ Per quanto riguarda la categoria di applicazioni 6 (presentig), purtroppo
  di insegnamento.
 \end_layout
 
-\begin_layout Section
-Come scrivere un Av decente
-\end_layout
-
 \begin_layout Standard
-sieijfdjklfdjsklfjdslfjdsl
-\end_layout
-
-\begin_layout Standard
-
+[Aggiungere testimonianza corso di studi algoritmie strutture dati in cui
+ sono state adoperate le tecniche sopra, obbligando gli studenti, che le
+ hanno trovate utili e il 65% ha passato l'esame al primo colpo]
 \end_layout
 
 \begin_layout Section
-tool disponibili
+Come creare un buon AV
+\end_layout
+
+\begin_layout Standard
+Algoviz [5] costituisce il sito di riferimento per studenti docenti e chiunque
+ altro sia interessato nella ricerca di un'applicazione che raccolga visualizzaz
+ioni di algoritmi, o l'animazione di una particolare struttura.
+ Dal 2006 il sito raccoglie in un proprio archivio (continuamente aggiornato)
+ tutte gli strumenti rintracciabili sul web relativi a questo argomento.
+ Tale sito è stato anche il punto di partenza di questa tesi, in quanto
+ ha permesso di esplorare e analizzare i principali toolkit per sviluppatori
+ presenti al momento, e inoltre contiene un'interessante guida per chi si
+ appresta a realizzare una propria visualizzazione di algoritmi.
+ 
+\end_layout
+
+\begin_layout Standard
+Si riporta ora una sintesi dei principi chiave esposti nella guida:
+\end_layout
+
+\begin_layout Description
+Coinvolgere fare in modo che l'utente partecipi attivamente durante l'animazione
+ dell'algoritmo, evitando le presentazioni statiche e passive
+\end_layout
+
+\begin_layout Description
+Semplificare ridurre la complessità dell'applicazione, a partire dall'interfacci
+a grafica.
+ Per quanto riguarda l'esposizione dei concetti, nascondere per quanto possibile
+ i dettagli implementativi degli algoritmi, e animare le i singoli passi
+ operazioni più complesse.
+ L'applicazione inoltre deve essere talmente semplice da necessitare di
+ una minima documentazione relativa al proprio funzionamento, in quanto
+ l'utente deve riuscire ad avviarla e comprenderne l'utilizzo fin dal primo
+ avvio.
+\end_layout
+
+\begin_layout Description
+DataSet fornire diverse tipologie di gestione dei dati in ingresso
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dati inseriti dall'utente, per permettere l'eplorazione di tutte le possibili
+ configurazioni, dando la possibilità allo studente di verificare il comportamen
+to della struttura in casi particolari da lui costruiti;
+\end_layout
+
+\begin_layout Itemize
+Dati random, di cui l'utente potrebbe controllare solo alcuni parametri
+ (con la dimensione, il range, ecc..);
+\end_layout
+
+\begin_layout Itemize
+Dati pre-costruiti ad hoc, che permettano allo studente di analizzare il
+ comportamento chiave dell'algortimo in situazioni chiave, preparate ad
+ hoc dal docente o dal programmatore.
+ Questa funzionalità risulta utile perchè generalmente gli studenti (soprattutto
+ se alle prime armi) non ha la fantasia necessaria per creare casi particolari
+ di testing.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Controllo se si tratta di una semplice rappresentazione animata dell'esecuzione
+ di un programma su di una struttura dati, è fondamentale permettere allo
+ studente di controllare il flusso dell'animazione attraverso una serie
+ di comandi, quali il controllo della velocità (nel caso si parli di un'animazio
+ne continua), possibilità di procedere passo-passo, andare avanti e indietro
+ nell'animazione.
+ Algoviz riporta che l'utilizzo dell'animazione spezzata in passi, produce
+ risultati migliori nell'apprendimento rispetto ad una visualizzazione continua
+ del funzionamento.
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Strumenti-Disponibili"
+
+\end_inset
+
+Strumenti Disponibili
+\end_layout
+
+\begin_layout Standard
+La relazione [2] redatta dal gruppo di lavoro di Algoviz [¹], illustra il
+ lavoro di raccolta di AV da essi realizzato nel 2006: sono stati trovati
+ circa 350 AV all'epoca, che sono quindi stati raccolti e classificati nel
+ catalogo presente nel sito, il quale è settimanalmente aggiornato e ad
+ oggi contiene più di 500 visualizzazioni.
+ Gran parte degli strumentu catalogati riguarda gli argomenti principali
+ dell'insegnamento di Algoritmi e Strutture dati, primo fra tutti il problema
+ dell'ordinamento, al quale seguono le strutture di ricerca (ABR) strutture
+ lineari e gli algoritmi sui grafi.
+\end_layout
+
+\begin_layout Standard
+A partire da questa raccolta, si sono analizzati i principali pacchetti
+ che potenzialmente costituivano un punto di partenza per altri sviluppatori
+ dal quale partire per creare la propria applicazione di animazione di algoritmi.
+ Gran parte delle applicazioni raccolte consistono in passive rappresentazioni
+ di algortimi che agiscono su strutture dati preinstallate (quindi non personali
+zzabili) nelle quali l'utente è coinvolto solo per quanto riguarda il controllo
+ del flusso.
+ Esistono però alcune eccezioni, in cui tale rappresentazione è arricchita
+ con funzionalità interessanti che catturano e focalizzano meglio l'attenzione
+ dello studente sull'argomento.
+\end_layout
+
+\begin_layout Standard
+Di seguito sono descritti alcuni dei principali pacchetti che sono stati
+ analizzati durante la ricerca.
+ Molti altri software sono stati esaminati, ma in questa circostanza non
+ vengono riportati, in quanto sono risultati presentare caratteristiche
+ molto simili a quelle dei programmi che ora verranno esposti.
+\end_layout
+
+\begin_layout Description
+Animal Il software Animal [11] fornisce 
+\end_layout
+
+\begin_layout Description
+JHAVE' pacchetto migliore, classificato al 2 posto, in quanto non si capice
+ come modificarlo e le domande fanno cagare
+\end_layout
+
+\begin_layout Description
+MatrixPro e Trackla2, vedi seguito
 \end_layout
 
 \begin_layout Part
@@ -323,6 +446,71 @@ Implementazione
 
 \begin_layout Section
 MatrixPro e Trackla2
+\end_layout
+
+\begin_layout Standard
+MatrixPro [1] è un software con licenza GPL2, ed è quindi gratuito e open
+ source.
+ Il tool è stato creato per permettere a studenti, ma soprattutto a insegnanti
+ di creare velocemente animazioni personalizzate su strutture dati preesistenti
+ nel programma.
+ L'applicazione è molto utile come spiegano gli sviluppatori nell'articolo
+ [1] per rendere più coinvolgenti le lezioni universitarie, con presentazioni
+ animate precedentemente create dal docente, o addirittura create al volo
+ durante la lezione, per riuscire a rispondere con la dimostrazione visiva
+ a domande e dubbi degli studenti.
+\end_layout
+
+\begin_layout Standard
+Tra i punti di forza di questo applicativo troviamo la semplicità con cui
+ possono essere utilizzate le strutture dati esistenti, ma soprattutto l'organiz
+zazione di queste.
+ Le strutture sono suddivise in due grandi gruppi: 
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+FDT (Fundamental Data Types) che equivalgono alle strutture basilari, primitive
+ alle quali non viene associata alcuna operazione o informazione sematica
+ riguardo al loro utilizzo.
+ Tra queste troviamo liste, alberi, grafi, array, chiavi.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+CDT (Conceptual Data Types) sono strutture che implementano tipi di dato
+ astratti che necessitano di maggiori restrizioni, e possono essere modificate
+ solo tramite operazioni che ne modificano la struttura secondo regole predefini
+te.
+ Tra queste troviamo Alberi Binari di Ricerca, Heap, Stack, e molte altre.
+\end_layout
+
+\begin_layout Standard
+Esistono inoltre altre strutture utilizzabili nella realizzazione di un'animazio
+ne, che vengono chiamate 
+\begin_inset Quotes eld
+\end_inset
+
+
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+traduzione di utilities
+\end_layout
+
+\end_inset
+
+strutture utili
+\begin_inset Quotes erd
+\end_inset
+
+, e permettono di creare al volo un input random o consentono altre funzionalità
+ allo stesso modo interessanti.
+ Questa classificazione in strutture primitive e avanzate aiuta l'utente
+ a comprendere meglio la gerachia esistente tra i diversi sistemi, e a concentra
+rsi maggiormente sulla parte concettuale del problema analizzato e non sui
+ dettagli implementativi.
 \end_layout
 
 \begin_layout Section
@@ -372,6 +560,30 @@ Sviluppi Futuri
 
 \begin_layout Section
 Conclusioni
+\end_layout
+
+\begin_layout Section
+Ringraziamenti
+\end_layout
+
+\begin_layout Standard
+io me stessa me
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Bibliography
@@ -514,6 +726,16 @@ Journal of Visual Languages and Computing
 \end_inset
 
  pp259-290
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+ http://www.algoanim.info/Animal2/ Animal2
 \end_layout
 
 \end_body
