@@ -36,6 +36,7 @@
 \tracking_changes false
 \output_changes false
 \author "" 
+\author "" 
 \end_header
 
 \begin_body
@@ -48,20 +49,329 @@ PERCORSO INTERATTIVO PER L'APPRENDIMENTO DEGLI ALGORITMI E STRUTTURE DATI
 Stella Margonar
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+tableofcontents
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+newpage
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
-State of the art
+Stato dell'arte
 \end_layout
 
 \begin_layout Section
-cos'è algoviz
+Introduzione
+\end_layout
+
+\begin_layout Standard
+boh..
+\end_layout
+
+\begin_layout Section
+Animazione e Simulazione
+\end_layout
+
+\begin_layout Standard
+A partire dagli anni '80, lo sviluppo animazioni per la visualizzazione
+ di algoritmi è stata in continuo aumento.
+ La prima testimonianza che si ha è 
+\begin_inset Quotes eld
+\end_inset
+
+Sorting out sorting
+\begin_inset Quotes erd
+\end_inset
+
+, un video di presentazione degli algoritmi di ordinamento, primo nel suo
+ genere.
+\end_layout
+
+\begin_layout Standard
+Dal 1981 fino ad oggi, le rappresentazioni di algoritmi e strutture dati
+ si sono diffuse ed hanno trovato il loro scopo finale come supporto per
+ studenti ed insegnanti nei relativi corsi universitari.
+\end_layout
+
+\begin_layout Standard
+Osservando il materiale disponibile ad oggi sul web e come ci fa notare
+ [1], possiamo riconoscere che esistono principalmente due forme in cui
+ si sono sviluppati i tool di algorithm visualization: l'animazione e la
+ simulazione.
+\end_layout
+
+\begin_layout Standard
+La prima consiste in una visualizzazione degli effetti che un algoritmo
+ predefinito ha su una struttura dati definita dal programmatore.
+ L'utente, in questo caso, assiste passivamente all'animazione osservandone
+ i risultati sulla struttura dati.
+\end_layout
+
+\begin_layout Standard
+Nel secondo caso parliamo di simulazione in quanto l'utente manipola gli
+ oggetti messi a disposizione dal programmatore secondo le modifiche permesse
+ dalla struttura in modo da creare una sequenza di passi analoghi a quelli
+ dell'algoritmo che si sta analizzando.
+\end_layout
+
+\begin_layout Standard
+Naturalmente questa è una classificazione grossolana, in quanto ogni tool
+ ha le sue particolari caratteristiche.
+ Le funzionalità introdotte negli anni nelle varie applicazioni disponibili
+ hanno permesso una seconda classificazione più accurata in base all'interazione
+ che tali visualizzazioni hanno con gli studenti.
+ Il risultato di gruppo di lavoro su 
+\begin_inset Quotes eld
+\end_inset
+
+Improving the Educational Impact of Algorithm Visualization
+\begin_inset Quotes erd
+\end_inset
+
+ (Giugno 2002, ITiCSE, Denmark) è stata la suddivisione in 6 categorie delle
+ varie forme di insegnamento in base al supporto di visualizzazione utilizzato,
+ riportata in [3]:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+trovare una traduzione decente
+\end_layout
+
+\end_inset
+
+No viewing (come lo traduco??), gli studenti non hanno a disposizione nessun
+ supporto visivo, (o al massimo immagini non animate);proprio 
+\end_layout
+
+\begin_layout Enumerate
+Viewing, osservazione passiva dell'esecuzione dell'algoritmo, in cui è possibile
+ al massimo controllare il flusso di esecuzione tramite comandi di undo
+ - redo - rewind....
+\end_layout
+
+\begin_layout Enumerate
+Responding, come per viewing consiste nell'osservazione della rappresentazione
+ dell'algoritmo, durante la quale allo studente è richiesto di rispondere
+ ad una serie di domande, o svolgere esercizi su carta, relativi all'argomento
+ presentato.
+\end_layout
+
+\begin_layout Enumerate
+Changing, modificare la visualizzazione principalmente attraverso la personalizz
+azione dei dati in ingresso all'algoritmo, in modo da analizzare il comportament
+o dell'algoritmo nei vari casi.
+\end_layout
+
+\begin_layout Enumerate
+Constructing, costruire la propria visualizzazione dell'algoritmo che si
+ sta studiando
+\end_layout
+
+\begin_layout Enumerate
+Presenting, presentare ad un pubblico la visualizzazione di un particolare
+ algoritmo, per poi procedere ad una discussione sull'argomento.
+\end_layout
+
+\begin_layout Standard
+I risultati delle tipologie di insegnamento appena riportate sono soggetto
+ di numerosi studi presenti e passati, e una sinteri dei risulati raccolti
+ è presente nella 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:studi-effettuati-sull'efficacia"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:studi-effettuati-sull'efficacia"
+
+\end_inset
+
+Studi effettuati sull'efficacia degli AV nell'insegnamento
+\end_layout
+
+\begin_layout Standard
+A seguito della classificazione delle tipologie di insegnamento dei corsi
+ riguardanti Algoritmi e Strutture Dati, e la loro interazione con le tecnologie
+ di visualizzazione algoritmi, sono stati effettuati numerosi studi a proposito
+ dell'efficacia dell'introduzione di queste nuove tecniche sull'apprendimento
+ degli studenti.
+\end_layout
+
+\begin_layout Standard
+Un'analisi generale è riportata in [3].
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+modificare al singolare..usare solo responding
+\end_layout
+
+\end_inset
+
+Lo studio [7] hanno riportato gli studenti analizzati che hanno utilizzato
+ un supporto alle lezioni di tipo 3(responding) e 5(construction), hanno
+ ottenuto risultati migliori nei test, rispetto ad altri studenti che non
+ ne avevano fatto uso, o che avevano utilizzato una semplice animazione
+ (livello 2).
+ Negli studi [9,10] sono stati raccolti invece risultati in conflitto con
+ i primi.
+ Secondo questi ultimi, non c'è stata nessuna differenza significati nei
+ risultati ottenuti dagli studenti con l'una o l'altra tipologia di supporto
+ alle lezioni.
+\end_layout
+
+\begin_layout Standard
+Lo studio riportato in [3] mette in risalto il miglioramento degli studenti,
+ a seconda della tecnica di supporto visivo utilizzata, tenendo anche conto
+ anche delle conoscenze precedenti dei soggetti.
+ Gli studenti, provenienti da 3 diverse università, sono stati soggetti
+ di un pre-test, nel quale venivano valutate le loro conoscenze e attitudini,
+ prima delle lezioni.
+ A seconda dei risultati, sono stati divisi in tre gruppi per ognuno dei
+ quali sono state effettuate una serie di lezioni sull'argomento degli algoritmi
+ di ordinamento con l'utilizzo di 3 diverse tecniche:
+\end_layout
+
+\begin_layout Enumerate
+Lezioni frontali senza supporti visivi
+\end_layout
+
+\begin_layout Enumerate
+Lezioni frontali con l'utilizzo da parte del docente di una presentazione
+ e di un tool di visualizzazione di algoritmi
+\end_layout
+
+\begin_layout Enumerate
+Lezioni frontali (come gruppo 2) con l'aggiunta di ore supplementari di
+ attività di laboratorio, in cui gli studenti potevano utilizzare singolarmente
+ un'applicazione (JHAVE' [??]) che permette di osservare l'animazione degli
+ algoritmi integrata con domande ad-hoc.
+\end_layout
+
+\begin_layout Standard
+A seguito di queste attività, gli studenti sono stati esaminati con un test
+ uguale per tutti.
+\end_layout
+
+\begin_layout Standard
+I risultati ottenuti si sono rilevati concordi con [7,8] in quanto rapportando
+ le conoscenze iniziali degli studenti con gli esiti dei test di verifica,
+ si è osservato che maggiore è l'interazione con lo strumento di supporto,
+ maggiori sono i progressi ottenuti dagli studenti.
+\end_layout
+
+\begin_layout Standard
+A seguito di questo studio si è quindi potuto supporre che i risultati non
+ significativi di [9] fossero dovuti ad un'inadeguata tecnica di raccolta:
+ nel caso delle domande gli studenti, lasciati liberi a se stessi e non
+ confinati in un laboratorio, hanno affrontato il tool come un gioco e non
+ come uno strumento educativo.
+\end_layout
+
+\begin_layout Standard
+Per quanto riguarda la categoria di applicazioni 6 (presentig), purtroppo
+ non sono ancora presenti studi che indichino l'efficacia di tale tecnica
+ di insegnamento.
+\end_layout
+
+\begin_layout Section
+Come scrivere un Av decente
+\end_layout
+
+\begin_layout Standard
+sieijfdjklfdjsklfjdslfjdsl
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \begin_layout Section
 tool disponibili
 \end_layout
 
+\begin_layout Part
+Implementazione
+\end_layout
+
 \begin_layout Section
-studi effettuati sull'efficacia
+MatrixPro e Trackla2
+\end_layout
+
+\begin_layout Section
+modifiche apportate
+\end_layout
+
+\begin_layout Subsection
+Esercizi + anche solo simulazione
+\end_layout
+
+\begin_layout Subsection
+Input a scelta
+\end_layout
+
+\begin_layout Subsection
+Documentazione algoritmo laterale
+\end_layout
+
+\begin_layout Subsection
+Domande relative esercizio
+\end_layout
+
+\begin_layout Subsection
+testo di aiuto
+\end_layout
+
+\begin_layout Section
+Esempi
+\end_layout
+
+\begin_layout Section
+Implementazione
+\end_layout
+
+\begin_layout Standard
+uno schema veloce delle classi, magari anche un activity con le operazioni
+ base che può fare lo studente
+\end_layout
+
+\begin_layout Part
+Conclusioni
+\end_layout
+
+\begin_layout Section
+Sviluppi Futuri
+\end_layout
+
+\begin_layout Section
+Conclusioni
 \end_layout
 
 \begin_layout Bibliography
@@ -81,6 +391,129 @@ Articolo 26 tool..
 
  - MatrixPro - A Tool for On-The-Fly Demonstration of Data Structures and
  Algorithms
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-1"
+
+\end_inset
+
+???? - Algorithm Visualization: A Report on the State of the Field
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-2"
+
+\end_inset
+
+ ??? - Algorithm Visualization in CS Education: Comparing Levels of Student
+ Engagement
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+ ??? - JAVE' -- An Enviroment to Actively Engage Students in Web-based Algorithm
+ Visualizations
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-4"
+
+\end_inset
+
+ http://wiki.algoviz.org/AlgovizWiki/ImplementorsGuide
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-5"
+
+\end_inset
+
+ Ronald Baeker
+\begin_inset Quotes eld
+\end_inset
+
+Sorting out Sorting
+\begin_inset Quotes erd
+\end_inset
+
+ - http://www.youtube.com/watch?v=F3oKjPT5Khg 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-6"
+
+\end_inset
+
+ 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+per queste 4 citazioni vedere references articolo [3]
+\end_layout
+
+\end_inset
+
+Byrne, M.D.
+ Catrambone, R.
+ and Stasko - Evaluating Animations as Student Aids in Learning pp 253-278
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-7"
+
+\end_inset
+
+ stasko 
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-8"
+
+\end_inset
+
+ Jarc, D.
+ J., Feldman, M.B.
+ and Heller - .......
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-9"
+
+\end_inset
+
+ HundHausen, C.D.
+ Douglas, S.A., and Stasko - 
+\begin_inset Quotes eld
+\end_inset
+
+Journal of Visual Languages and Computing
+\begin_inset Quotes erd
+\end_inset
+
+ pp259-290
 \end_layout
 
 \end_body
