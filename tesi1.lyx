@@ -1,0 +1,87 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+PERCORSO INTERATTIVO PER L'APPRENDIMENTO DEGLI ALGORITMI E STRUTTURE DATI
+\end_layout
+
+\begin_layout Author
+Stella Margonar
+\end_layout
+
+\begin_layout Part
+State of the art
+\end_layout
+
+\begin_layout Section
+cos'è algoviz
+\end_layout
+
+\begin_layout Section
+tool disponibili
+\end_layout
+
+\begin_layout Section
+studi effettuati sull'efficacia
+\end_layout
+
+\begin_layout Bibliography
+\begin_inset CommandInset bibitem
+LatexCommand bibitem
+key "key-3"
+
+\end_inset
+
+Villa Karavirta, Ari Korhonen, Lauri Malmi, and Kimmo Stalancke in 
+\begin_inset Quotes eld
+\end_inset
+
+Articolo 26 tool..
+\begin_inset Quotes erd
+\end_inset
+
+ - MatrixPro - A Tool for On-The-Fly Demonstration of Data Structures and
+ Algorithms
+\end_layout
+
+\end_body
+\end_document
