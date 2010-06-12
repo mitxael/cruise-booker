@@ -2,7 +2,7 @@
 \lyxformat 345
 \begin_document
 \begin_header
-\textclass article
+\textclass book
 \use_default_options true
 \language english
 \inputencoding auto
@@ -17,6 +17,7 @@
 
 \graphics default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -72,7 +73,7 @@ newpage
 
 \end_layout
 
-\begin_layout Part
+\begin_layout Chapter
 Stato dell'arte
 \end_layout
 
@@ -440,7 +441,7 @@ JHAVE' pacchetto migliore, classificato al 2 posto, in quanto non si capice
 MatrixPro e Trackla2, vedi seguito
 \end_layout
 
-\begin_layout Part
+\begin_layout Chapter
 Implementazione
 \end_layout
 
@@ -550,7 +551,7 @@ uno schema veloce delle classi, magari anche un activity con le operazioni
  base che può fare lo studente
 \end_layout
 
-\begin_layout Part
+\begin_layout Chapter
 Conclusioni
 \end_layout
 
