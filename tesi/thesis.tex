@@ -1,0 +1,94 @@
+%% LyX 1.6.4 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[12pt,a4paper,twoside,openright]{book} 
+\usepackage[small,anne]{caption2}  
+\usepackage[utf8x]{inputenc}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{float}
+\usepackage{fancyheadings}
+\usepackage{fancybox}
+\usepackage{setspace}
+\usepackage{frontesp} % first page
+\usepackage{paralist}
+
+% From TCAD paper
+\usepackage{cite}
+\usepackage{times}
+\usepackage[OT1]{fontenc}
+\usepackage{type1cm}
+\usepackage{url}
+\usepackage{subfigure}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xspace}
+%\usepackage[ruled,linesnumbered]{algorithm2e}
+% from tcad paper
+%%\usepackage[Lenny]{sty/fncychapleo}
+\usepackage[Bjornstrup]{sty/fncychapleo}
+\usepackage{tikz}
+% Optional PGF libraries
+\usepackage{pgflibraryarrows}
+\usepackage{pgflibrarysnakes}
+\usepackage{indentfirst}
+
+% test
+\usepackage{hyperref}
+
+\begin{document} 
+%% dimensione interlinea
+\setstretch{1.5}
+%\linespread{1.3}
+
+% print first page
+% commands used by the first page
+% titolo
+\title{Percorso Interattivo per l'Apprendimento degli Algoritmi e Strutture Dati}
+% candidato
+\providecommand{\autore}{\Large{Stella Margonar}}
+% relatore
+\providecommand{\principaladviser}{\Large{prof. Alberto Montresor}} 
+% correlatore
+\providecommand{\firstreader}{\Large{Primo correlatore}}
+\providecommand{\secondreader}{\Large{Secondo correlatore}}
+\providecommand{\annoacc}{\Large\textbf{2009 - 2010}}
+
+% Print First page
+\titlep
+% end of management of first page
+
+% Introductive part
+\frontmatter
+\pagenumbering{roman}
+% \input{Files/riconoscimenti}
+\tableofcontents
+\listoffigures
+\listoftables
+\clearpage
+
+
+
+% Main part
+\mainmatter
+\setlength{\evensidemargin}{0cm}
+\setlength{\oddsidemargin}{+1.5cm}
+\setlength{\parindent}{1.4cm}
+\pagestyle{fancy}
+\lhead[{\bfseries {\em \leftmark}}]{}
+\rhead[]{{\it \rightmark}}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}{}}
+
+\input{Files/introduzione}
+\input{Files/progetto}
+\input{Files/implementazione}
+\input{Files/conclusioni}
+
+
+\newpage
+\input{Files/bibliografia}
+
+\end{document}
+
