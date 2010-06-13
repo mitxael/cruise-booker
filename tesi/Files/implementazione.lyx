@@ -1,0 +1,234 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+chapter{Implementazione}
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+In questo capitolo si descrivono e si motivano le scelte progettuali realizzate
+ nell'implementazione dell'applicazione, soffermandosi in particolar modo
+ sulle migliorie apportate al programma di partenza.
+ Sono inoltre descritti due esercizi rappresentativi 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Esempi"
+
+\end_inset
+
+, e una breve spiegazione sull'utilizzo da parte dello studente
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Come-si-usa"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Descrizione iniziale
+\end_layout
+
+\begin_layout Standard
+Il software realizzato si presenta allo studente con una schermata iniziale
+ contenente l'elenco degli esercizi preparati organizzati tramite una struttura
+ ad albero per argomenti.
+ Selezionando un particolare esercizio si visualizza nella parte inferiore
+ della finestra una breve descrizione dell'esercitazione.
+\end_layout
+
+\begin_layout Standard
+Una volta scelta l'attività, allo studente si apre un'ulteriore finestra,
+ molto simile a quella del sistema Trakla2, ma con qualche integrazione,
+ di cui si parlerà in seguito in questo capitolo.
+ In modo analogo al sistema di esercizi originale, l'utente deve simulare
+ il comportamento dell'algoritmo in analisi, ed ha la possibilità di valutare
+ il proprio risultato, e di vederne la risoluzione corretta.
+\end_layout
+
+\begin_layout Section
+Modifiche apportate
+\end_layout
+
+\begin_layout Standard
+E' stato scelto di sviluppare solo esercizi di simulazione di algoritmi
+ perchè in questo modo lo studente è il protagonista effettivo dell'animazione.
+ Il programma quindi non permette all'utente di realizzare una propria animazion
+e, in quanto questa funzione del programma MatrixPro non è stata inclusa
+ nel nuovo software.
+ E' stata effettuata questa scelta per due motivazioni: 
+\end_layout
+
+\begin_layout Itemize
+i destinatari del programma sono studenti, non insegnanti, e quindi si presuppon
+e (in accordo con gli studi riportati nel capitolo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "capitolo1"
+
+\end_inset
+
+) che siano più portati a utilizzare e 
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+inteso come dati input..come si può dire??
+\end_layout
+
+\end_inset
+
+personalizzare le visualizzazioni piuttosto che a creare nuove animazioni.
+\end_layout
+
+\begin_layout Itemize
+esistono già validi strumenti per la creazione di animazioni personalizzate,
+ come MatrixPro, che permettono di realizzarle semplicemente anche in pochi
+ minuti; l'obiettivo di questa tesi era di realizzare qualcosa di nuovo
+ e poco diffuso, piuttosto di creare un programma che è gia disponibile.
+\end_layout
+
+\begin_layout Standard
+Inoltre, se si rendesse necessario, è possibile in un secondo momento integrare
+ il progetto al sistema MatrixPro in modo analogo a come il sistema Trakla2
+ è stato unito a quest'ultimo.
+\end_layout
+
+\begin_layout Standard
+[parlare della scelta iniziale???]
+\end_layout
+
+\begin_layout Standard
+Per realizzare al meglio un'applicazione semplice nell'uso, e soprattutto
+ interattiva, sono state apportate alcune modifiche ed estenzioni al programma
+ origianale.
+ Nelle prossime sezioni saranno analizzate in dettaglio le variazioni.
+\end_layout
+
+\begin_layout Subsection
+Tipologie di Esercizi
+\end_layout
+
+\begin_layout Standard
+Durante la realizzazione del progetto, si è osservato che per alcune categorie
+ di algoritmi la tecnica dell'esercizio di simulazione non era adatta, in
+ quanto l'esercizio risultava essere poco interessante per l'utente poichè
+ consisteva in un gran numero di operazioni da eseguire tutte simili tra
+ loro.
+ L'esempio più rappresentativo di questa problematica è la categoria degli
+ algortimi di programmazione dinamica: lo studente dovendo riempire con
+ dei numeri una tabella (vedi esercizio Longest Common Subsequence), perde
+ interesse nell'argomento e non approfondisce adeguatamente il problema
+ e la sua soluzione.
+\end_layout
+
+\begin_layout Standard
+Per questo motivo si è scelto di dividere la raccolta di attività in due
+ sottoinsiemi: gli esercizi e le simulazioni.
+ Per la prima parte si sono realizzati esercizi di simulazione 
+\end_layout
+
+\begin_layout Subsection
+Input a scelta
+\end_layout
+
+\begin_layout Subsection
+Documentazione algoritmo laterale
+\end_layout
+
+\begin_layout Subsection
+Domande relative esercizio
+\end_layout
+
+\begin_layout Subsection
+testo di aiuto
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Come-si-usa"
+
+\end_inset
+
+Come si usa
+\end_layout
+
+\begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Esempi"
+
+\end_inset
+
+Esempi
+\end_layout
+
+\begin_layout Section
+Implementazione
+\end_layout
+
+\begin_layout Standard
+uno schema veloce delle classi, magari anche un activity con le operazioni
+ base che pu fare lo studente
+\end_layout
+
+\begin_layout Section
+Conlusioni capitolo e problemi riscontrati
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,99 @@
+
+\chapter{Implementazione} 
+
+In questo capitolo si descrivono e si motivano le scelte progettuali
+realizzate nell'implementazione dell'applicazione, soffermandosi in
+particolar modo sulle migliorie apportate al programma di partenza.
+Sono inoltre descritti due esercizi rappresentativi \ref{sec:Esempi},
+e una breve spiegazione sull'utilizzo da parte dello studente\ref{sec:Come-si-usa}.
+
+
+\section{Descrizione iniziale}
+
+Il software realizzato si presenta allo studente con una schermata
+iniziale contenente l'elenco degli esercizi preparati organizzati
+tramite una struttura ad albero per argomenti. Selezionando un particolare
+esercizio si visualizza nella parte inferiore della finestra una breve
+descrizione dell'esercitazione.
+
+Una volta scelta l'attivit, allo studente si apre un'ulteriore finestra,
+molto simile a quella del sistema Trakla2, ma con qualche integrazione,
+di cui si parler in seguito in questo capitolo. In modo analogo al
+sistema di esercizi originale, l'utente deve simulare il comportamento
+dell'algoritmo in analisi, ed ha la possibilit di valutare il proprio
+risultato, e di vederne la risoluzione corretta.
+
+
+\section{Modifiche apportate}
+
+E' stato scelto di sviluppare solo esercizi di simulazione di algoritmi
+perch in questo modo lo studente  il protagonista effettivo dell'animazione.
+Il programma quindi non permette all'utente di realizzare una propria
+animazione, in quanto questa funzione del programma MatrixPro non
+ stata inclusa nel nuovo software. E' stata effettuata questa scelta
+per due motivazioni: 
+\begin{itemize}
+\item i destinatari del programma sono studenti, non insegnanti, e quindi
+si presuppone (in accordo con gli studi riportati nel capitolo \ref{capitolo1})
+che siano pi portati a utilizzare e personalizzare le visualizzazioni
+piuttosto che a creare nuove animazioni.
+\item esistono gi validi strumenti per la creazione di animazioni personalizzate,
+come MatrixPro, che permettono di realizzarle semplicemente anche
+in pochi minuti; l'obiettivo di questa tesi era di realizzare qualcosa
+di nuovo e poco diffuso, piuttosto di creare un programma che  gia
+disponibile.
+\end{itemize}
+Inoltre, se si rendesse necessario,  possibile in un secondo momento
+integrare il progetto al sistema MatrixPro in modo analogo a come
+il sistema Trakla2  stato unito a quest'ultimo.
+
+{[}parlare della scelta iniziale???{]}
+
+Per realizzare al meglio un'applicazione semplice nell'uso, e soprattutto
+interattiva, sono state apportate alcune modifiche ed estenzioni al
+programma origianale. Nelle prossime sezioni saranno analizzate in
+dettaglio le variazioni.
+
+
+\subsection{Tipologie di Esercizi}
+
+Durante la realizzazione del progetto, si  osservato che per alcune
+categorie di algoritmi la tecnica dell'esercizio di simulazione non
+era adatta, in quanto l'esercizio risultava essere poco interessante
+per l'utente poich consisteva in un gran numero di operazioni da
+eseguire tutte simili tra loro. L'esempio pi rappresentativo di questa
+problematica  la categoria degli algortimi di programmazione dinamica:
+lo studente dovendo riempire con dei numeri una tabella (vedi esercizio
+Longest Common Subsequence), perde interesse nell'argomento e non
+approfondisce adeguatamente il problema e la sua soluzione.
+
+Per questo motivo si  scelto di dividere la raccolta di attivit
+in due sottoinsiemi: gli esercizi e le simulazioni. Per la prima parte
+si sono realizzati esercizi di simulazione 
+
+
+\subsection{Input a scelta}
+
+
+\subsection{Documentazione algoritmo laterale}
+
+
+\subsection{Domande relative esercizio}
+
+
+\subsection{testo di aiuto}
+
+
+\section{\label{sec:Come-si-usa}Come si usa}
+
+
+\section{\label{sec:Esempi}Esempi}
+
+
+\section{Implementazione}
+
+uno schema veloce delle classi, magari anche un activity con le operazioni
+base che pu fare lo studente
+
+
+\section{Conlusioni capitolo e problemi riscontrati}
