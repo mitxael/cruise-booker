@@ -67,33 +67,247 @@ lo studente dovendo riempire con dei numeri una tabella (vedi esercizio
 Longest Common Subsequence), perde interesse nell'argomento e non
 approfondisce adeguatamente il problema e la sua soluzione.
 
-Per questo motivo si  scelto di dividere la raccolta di attivit
-in due sottoinsiemi: gli esercizi e le simulazioni. Per la prima parte
-si sono realizzati esercizi di simulazione 
+Per questo motivo si  scelto di dividere la raccolta di problemi
+in due sottoinsiemi: gli esercizi e le animazioni. Per la prima parte
+si sono realizzati esercizi di simulazione molto simili a quelli forniti
+da Trackla2, mentre per la seconda parte sono stati prodotte animazioni
+dell'algoritmo, analoghe alla modalit {}``Model Answer'' degli
+esercizi. Per le simulazioni,  stata quindi sacrificata un po' di
+interattivit a favore di una maggiore chiarezza dell'esercizio.
 
 
-\subsection{Input a scelta}
+\subsection{\label{sub:Input-a-scelta}Input a scelta}
+
+In accordo con i risultati degli studi di cui si parla nel capitolo
+\ref{SCORRETTA:Ref: capitolo1},  stata aggiunta al programma la
+possibilit per l'utente di inserire dati in ingresso scelti personalmente.
+Il software Trakla2 invece automaticamente generava un insieme di
+dati casuali.
+
+Questa nuova funzione garantisce un buon livello di interattivit
+dell'utente, con il minimo sforzo da parte di quest'ultimo: lo studente
+pu infatti inserire particolari dati per osservare il comportamento
+dell'algoritmo nei casi limite. E' sempre comunque permesso l'utilizzo
+di input casuali generati dal sistema.
+
+La preferenza per una particolare tipologia di input avviene successivamente
+alla scelta dell'esercizio: allo studente si presenta una finestra
+in cui deve decidere se utilizzare i propri dati oppure farli generare
+al programma. Se opta per l'input personalizzato, a seconda dell'esercizio
+in analisi utilizzer diversi tecniche per l'inserimento. In particolare
+il diverso procedimento dipende dal tipo di struttura dati che utilizza
+l'algoritmo. Il primo passo  comune alle tre tecniche: l'utente deve
+inserire l'elenco delle chiavi (elementi di un vettore, nodi di un
+grafo, nomi dei punti) all'interno di un campo di testo. In alcuni
+casi non  previsto l'inserimento di queste chiavi, in quanto non
+sono necessarie per la particolare simulazione. La dimensione dell'input
+ definita implicitamente in questo passaggio. Il prossimo  invece
+discriminante delle varie tecniche, e lo analizziamo nel dettaglio:
+\begin{itemize}
+\item Esercizi {}``normali'', in questa categoria rientrano tutti gli
+esercizi che non utilizzano particolari strutture dati (grafi o aree
+geometriche), e quindi principalmente contengono vettori e/o alberi.
+Se l'esercitazione necessita solo di un elenco di valori-chiave con
+i quali riempire la struttura, allora nessun'altra finestra viene
+visualizzata, e lo studente passa direttamente all'attivit di simulazione.
+Se sono previsti dati aggiuntivi, come per esempio i parametri di
+una funzione di hashing, si presenta una finestra in cui  possibile
+inserire i valori di suddetti parametri aggiuntivi.
+\item Grafi, la creazione di un grafo necessita di un elenco di nodi, ma
+soprattutto della relazione di adiacenza tra questi. Nell'applicazione
+l'inserimento di tale informazione  stato realizzato tramite una
+matrice di adiacenza. Lo studente si trova di fronte ad una seconda
+finestra, in cui  presentata una matrice costruita nel seguente modo:
+le cui righe e colonne sono etichettate con i nodi precedentemente
+inseriti, ed ogni elemento interno  un'area di testo (se il grafo
+ha archi pesati) in cui si deve inserire il peso del relativo arco
+(0 equivale a arco assente), oppure una casella di spunta per indicare
+se esiste o meno un arco tra i due nodi. Se si sta parlando di un
+grafo non orientato,  possibile inserire le informazioni della relazione
+solo nella parte triangolare inferiore della matrice.
+\item Geometria, per i due problemi di geometria computazionale  stato
+creata una tecnica di input molto simile al primo tipo, in cui  possibile
+inserire le coppie di coordinate (x,y) di ogni punto precedentemente
+aggiunto.
+\end{itemize}
+Inizialmente era prevista anche un'ulteriore tipologia di inserimento
+dati: i Test Cases {[}tradurre{]}. Essi prevedevano di fornire un
+paricolare insieme di dati preparati dal programmatore (come suggerito
+della guida \cite{wikiAlgoViz}) che permettessero allo studente di
+osservare il comportamento dell'algoritmo in situazioni limite, poich
+egli potrebbe non avere l'intuizione corretta per realizzarle tramite
+un input personalizzato. Successivamente questa possibilit  stata
+accantonata per problemi di tempi nel completamento del progetto,
+e per concentrarsi su altri aspetti dell'applicazione. L'inserimento
+di tale funzione in un secondo momento non  comunque esclusa.
 
 
-\subsection{Documentazione algoritmo laterale}
+\subsection{Documentazione algoritmo}
+
+Sono state fatte alcune integrazioni anche dal punto di vista dell'interfaccia
+grafica del software, in particolare per la finestra di simulazione
+degli esercizi, che sono descritte in questa e nelle due sezioni successive.
+
+Per prima cosa  stato aggiunto un pannello laterale nella parte sinistra
+della finestra, che contiene a sua volta tre pannelli tab {[}tabpanel..
+come si traduce?{]}. In questa sezione analizzeremo due di questi
+pannelli.
+
+Il pannello {}``Descrizione'' contiene alcune informazioni dell'algoritmo,
+in particolare una breve descrizione del problema affrontato, e le
+istruzioni fondamentali per poter affrontare la simulazione nell'esercizio. 
+
+Un secondo pannello contiene lo pseudo codice dell'algoritmo in questione,
+ed  tratto dal libro \cite{libro}. In alcuni casi il codice di un
+particolare problema non era presente su questo libro, e quindi si
+riferisce ad un altro libro \cite{cormen}.
+
+La gestione dei testi relativi ad ogni esercizio  stata realizzata
+con l'aiuto di un file di testo esterno al codice, contenente tutte
+queste propriet. In questo modo si semplificano eventuali modifiche
+future della documentazione, che non necessitano la compilazione del
+codice sorgente, ma che consistono semplicemente in un aggiornamento
+di questo file. Inoltre, si permette ad un potenziale docente che
+utilizza un diverso testo per il proprio corso, di aggiornare i codici
+e le informazioni degli algoritmi secondo le proprie preferenze.
+
+La scelta di aggiungere questa sezione informativa al software  stata
+fatta in seguito all'analisi degli altri programmi disponibili \ref{SCORRETTA:Ref: sec:Strumenti-Disponibili},
+ma che JHAVE' \cite{JHAVE} il quale forniva allo studente una documentazione
+sull'argomento come integrazione all'esercizio. Anche qui i testi
+di sussidio non erano integrati nel codice, ma memorizzati in pagine
+html {[}verificare{]}.
 
 
-\subsection{Domande relative esercizio}
+\subsection{\label{sub:Domande-relative-esercizio}Domande relative esercizio}
+
+Un'altra funzionalit che  stata aggiunta al programma prendendo
+spunto dalle caratteristiche di JAHVE' \cite{JHAVE},  la possibilit
+di confrontarsi con alcune domande a proposito dell'algoritmo o della
+struttura dati analizzati. Nel programma JHAVE, l'animazione del problema
+viene interrotta ponendo domande sull'argomento allo studente, con
+una frequenza che varia a seconda di alcuni parametri impostati dal
+programmatore. Lo studente per poter continuare l'animazione deve
+rispondere alle domande che gli sono poste. Provando ad utilizzare
+questo programma, alcuni studenti del corso di Informatica hanno trovato
+fastidioso essere continuamente fermati nella presentazione da queste
+domande. Nel nuovo progetto realizzato si  quindi optato per inserire
+la possibilit di rispondere alle domande, ma a scelta dello studente.
+
+Il pulsante per poter sottoporsi ad una domanda  posto nel terzo
+pannello sulla sinistra, insieme ai due di cui si  parlato nelle
+sezioni precedenti. Le domande, che variano da 3 a 5 per ogni esercizio,
+sono di due tipologie: a scelta multipla o a risposta aperta (in cui
+lo studente risponde scrivendo all'interno di un campo di testo),
+e vengono visualizzate tramite una piccola finestra. Una volta inserita
+la risposta, il programma comunica allo studente se  esatta o meno;
+nel caso fosse sbagliata viene visualizzata la soluzione giusta. Le
+domande e le loro risposte sono inserite direttamente nel codice di
+ogni esercizio. Questo  sicuramente un punto debole, e quindi un
+miglioramento futuro potr trasportarle all'esterno del codice, magari
+in un file di testo esterno, come per la documentazione degli esercizi.
+
+E' stata inoltre sperimentata la possibilit di creare domande {}``dinamiche'',
+ovvero che interagiscono direttamente con il contenuto dell'esercizio.
+Per esempio in un esercizio di inserimento di dati in un albero di
+ricerca binario, si potrebbe chiedere: {}``In quale nodo andr inserita
+la prossima chiave K'' {}``(Risposta) S''. In questo caso, sia
+la domanda che la risposta, saranno modificate con i dati dell'esercizio,
+sostituendo a K il valore della chiave che si  prossimi ad inserire
+nella struttura, e a S il nome del nodo che diventer padre di K.
 
 
-\subsection{testo di aiuto}
+\subsection{FeedBak RealTime}
 
+I programmi di animazione di algoritmi sono usati spesso da studenti
+alle prime armi con un determinato argomento, e che hanno bisogno
+di vedere e toccare con mano per riuscire a focalizzare al meglio
+il problema.s Uno studente non ferrato in un particolare algoritmo
+non riuscir a simulare correttamente gi la prima volta l'esercizio,
+e dovr ricorrere continuamente alla funzione di Model Answer per
+controllare se si sta muovendo correttamente nella struttura dati.
+Per agevolare il primo apprendimento dell'argomento, si  quindi pensato
+di aggiugere, sempre nella parte sinistra dello schermo, un'area di
+testo che reagisce ai cambiementi effettuati dall'utente sulle strutture
+dati, modificando il proprio testo e comunicando attraverso questo
+allo studente se la simulazione di ogni passo  corretta. Per ogni
+esercizio il criterio con cui si stabilisce se un particolare passo
+ corretto, e il testo che di conseguenza deve apparire, sono diversi
+e incorporati nel codice.
 
-\section{\label{sec:Come-si-usa}Come si usa}
+Per un utente esperto che vuole verificare le proprie conoscenze,
+questa funzione pu essere di disturbo:  stata perci inserita la
+possibilit di disattivare l'area di testo semplicemente un pulsante.
+L'area pu essere tuttavia riattivata in un secondo momento.
 
 
 \section{\label{sec:Esempi}Esempi}
 
+descrizione di due esempi uno per simulazione esercizio, l'altro per
+animazione. 
 
-\section{Implementazione}
 
-uno schema veloce delle classi, magari anche un activity con le operazioni
-base che pu fare lo studente
+\subsection{esercizio ABR insert}
+
+descrizione esercizio abr insert
+
+
+\subsection{Esercizio Fibonacci o Graham}
+
+descrizione esercizio Fibonacci
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[scale=0.4]{images/StateChart.png}
+\caption{Diagramma utilizzo dello studente}
+\end{figure} 
 
 
 \section{Conlusioni capitolo e problemi riscontrati}
+
+Lo scopo finale di questo lavoro era la realizzazione di un programma
+che permettesse allo studente di Algoritmi e Struture Dati di avere
+un supporto al corso pi interattivo rispetto ai programmi gi disponibili.
+In quanto programma sperimentale, il software risultante  ricco di
+nuove funzioni che aumentano la partecipazione dell'utente nell'attivit,
+ma che purtroppo non sono ancora perfette.
+
+Come si  gi accennato in questo capitolo, le migliorie introdotte
+possono essere ulteriormente perfezionate, per fornire agli studenti
+un valido aiuto per lo studio. Nonostante non siano state ancora realizzate
+nel progetto, sono gi state concepite pianificate alcune modifiche:
+\begin{description}
+\item [{Domande}] Innanzi tutto si potrebbe aumentare la quantit di domande
+per ogni esercizio, e migliorare il sistema di inserimento delle risposte:
+ad oggi il sistema giudica diverse le riposte {}``O(nlogn)'' e {}``O(n
+logn)''. Come  gi stato accennato in \ref{sub:Domande-relative-esercizio},
+sarebbe utile spostare le domande in un file di testo esterno, di
+modo che non sia necessario ri-compilare tutto il codice del programma
+nel caso si modifichi solo una domanda, e per permettere ad un docente
+interessato di personalizzare le domande in accordo con il proprio
+programma di studio.
+\item [{Input1}] Nella sezione \ref{sub:Input-a-scelta}, si parla della
+possibilit si fornire una terza tipologia di input, i {}``Test Cases'',
+ovvero un insieme di dati preparati ad hoc per ogni algoritmo, per
+evidenziare particolari comportamenti e caratteristiche del problema
+in analisi. Sicuramente questa potrebbe essere una delle prime integrazioni
+al programma della tesi. Un ulteriore miglioria possibile attuabile,
+poterbbe consistere nel permettere di memorizzare in un file di testo
+i test case per ogni esercizio, che sarebbero modificabili da un docente,
+come per domande e documentazione
+\item [{Input2}] La tecnica di inserimento dei dati potrebbe inoltre essere
+integrata con il sistema di creazione di animazioni {}``al volo''
+di MatrixPro. Il software, come spiegato in \ref{sec:MatrixPro-e-Trackla2},
+permette di inserire e personalizzare strutture dati preinstallate
+nell'applicazione per poter creare animazioni. Sarebbe un grande passo
+avanti permettere agli utenti del programma di inserire i dati di
+input di un esercizio con lo stesso sistema di creazione della animazioni
+di MatrixPro: sicuramente renderebbe gli studenti pi fantasiosi nel
+creare casi limite, soprattutto con strutture grafiche come grafi
+e alberi.
+\item [{Esercizi}] Il programma di un corso di Algoritmi  sicuramente
+vasto, e per ogni argomento una dimostrazione non basta di sicuro.
+Potrebbe essere necessario in futuro allargare la raccolta di esercizi
+per fornire agli studenti un percorso ricco e completo di supporto
+al proprio corso di studi. 
+\end{description}

@@ -37,6 +37,7 @@
 \tracking_changes false
 \output_changes false
 \author "" 
+\author "" 
 \end_header
 
 \begin_body
@@ -72,12 +73,38 @@ Creare Animazioni con MatrixPro
 \end_layout
 
 \begin_layout Standard
-MatrixPro [1] un software con licenza GPL2, ed quindi gratuito e open source.
+MatrixPro 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{MatrixPro}
+\end_layout
+
+\end_inset
+
+ un software con licenza GPL2, ed quindi gratuito e open source.
  Il tool è stato creato per permettere a studenti, ma soprattutto ad insegnanti,
  di creare velocemente animazioni personalizzate su strutture dati preesistenti
  nel programma.
  L'applicazione èmolto utile come spiegano gli sviluppatori nell'articolo
- [1] per rendere più coinvolgenti le lezioni universitarie, con presentazioni
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{MatrixPro}
+\end_layout
+
+\end_inset
+
+ per rendere più coinvolgenti le lezioni universitarie, con presentazioni
  animate precedentemente create dal docente, o addirittura create al volo
  durante la lezione, per riuscire a rispondere con la dimostrazione visiva
  a domande e dubbi degli studenti.
@@ -182,10 +209,7 @@ Una volta creata l'animazione desiderata, è possibile salvarla come oggetto
 \end_layout
 
 \begin_layout Description
-
-LaTeX
-\lang english
- immagine in formato .tex che è possibile includere facilmente nei documenti
+LaTeX immagine in formato .tex che è possibile includere facilmente nei documenti
  Latex 
 \end_layout
 
@@ -208,7 +232,7 @@ Il sistema Trakla2
 \end_layout
 
 \begin_layout Standard
-A partire dalla versione ???? del software, si trova all'interno del pacchetto
+A partire dalla versione [????] del software, si trova all'interno del pacchetto
  che viene fornito da MatrixPro una funzionalità molto interessante, che
  è stata chiamata Trakla2.
  Questa parte del sistema consiste in un insieme di 
@@ -227,7 +251,47 @@ esercizi
 \end_layout
 
 \begin_layout Standard
-[inserire immagine trakla_screenshot]
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[scale=0.35]{images/trakla_screenshot.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Screenshot del sistema MatrixPro}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
