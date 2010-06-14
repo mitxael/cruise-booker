@@ -37,6 +37,7 @@
 \tracking_changes false
 \output_changes false
 \author "" 
+\author "" 
 \end_header
 
 \begin_body
@@ -87,6 +88,19 @@ Sorting out sorting
 \begin_inset Quotes erd
 \end_inset
 
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{video}
+\end_layout
+
+\end_inset
+
 , un video di presentazione degli algoritmi di ordinamento, primo nel suo
  genere.
 \end_layout
@@ -99,9 +113,21 @@ Dal 1981 fino ad oggi, le rappresentazioni di algoritmi e strutture dati
 
 \begin_layout Standard
 Osservando il materiale disponibile ad oggi sul web e come ci fa notare
- [1], possiamo riconoscere che esistono principalmente due forme in cui
- si sono sviluppati i tool di algorithm visualization: l'animazione e la
- simulazione.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{MatrixPro}
+\end_layout
+
+\end_inset
+
+, possiamo riconoscere che esistono principalmente due forme in cui si sono
+ sviluppati i tool di algorithm visualization: l'animazione e la simulazione.
 \end_layout
 
 \begin_layout Standard
@@ -134,7 +160,20 @@ Improving the Educational Impact of Algorithm Visualization
 
  (Giugno 2002, ITiCSE, Denmark) stata la suddivisione in 6 categorie delle
  varie forme di insegnamento in base al supporto di visualizzazione utilizzato,
- riportata in [3]: 
+ riportata in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{AV-compare}
+\end_layout
+
+\end_inset
+
+: 
 \end_layout
 
 \begin_layout Enumerate
@@ -207,23 +246,73 @@ A seguito della classificazione delle tipologie di insegnamento dei corsi
 \end_layout
 
 \begin_layout Standard
-Un'analisi generale riportata in [3].
- Lo studio [7] hanno riportato gli studenti analizzati che hanno utilizzato
- un supporto alle lezioni di tipo 3(responding) e 5(construction), hanno
- ottenuto risultati migliori nei test, rispetto ad altri studenti che non
- ne avevano fatto uso, o che avevano utilizzato una semplice animazione
- (livello 2).
- Negli studi [9,10] sono stati raccolti invece risultati in conflitto con
- i primi.
- Secondo questi ultimi, non c' stata nessuna differenza significati nei
+Un'analisi generale riportata in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{AV-compare}
+\end_layout
+
+\end_inset
+
+.
+ Lo studio 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{byrne}
+\end_layout
+
+\end_inset
+
+ hanno riportato gli studenti analizzati che hanno utilizzato un supporto
+ alle lezioni di tipo 3(responding) e 5(construction), hanno ottenuto risultati
+ migliori nei test, rispetto ad altri studenti che non ne avevano fatto
+ uso, o che avevano utilizzato una semplice animazione (livello 2).
+ Nello studio 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{jarc}
+\end_layout
+
+\end_inset
+
+ sono stati raccolti invece risultati in conflitto con i primi.
+ Secondo quest'ultimo, non c'è stata nessuna differenza significati nei
  risultati ottenuti dagli studenti con l'una o l'altra tipologia di supporto
  alle lezioni.
 \end_layout
 
 \begin_layout Standard
-Lo studio riportato in [3] mette in risalto il miglioramento degli studenti,
- a seconda della tecnica di supporto visivo utilizzata, tenendo anche conto
- anche delle conoscenze precedenti dei soggetti.
+Lo studio riportato in 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{AV-compare}
+\end_layout
+
+\end_inset
+
+ mette in risalto il miglioramento degli studenti, a seconda della tecnica
+ di supporto visivo utilizzata, tenendo anche conto anche delle conoscenze
+ precedenti dei soggetti.
  Gli studenti, provenienti da 3 diverse universit, sono stati soggetti di
  un pre-test, nel quale venivano valutate le loro conoscenze e attitudini,
  prima delle lezioni.
@@ -244,8 +333,21 @@ Lezioni frontali con l'utilizzo da parte del docente di una presentazione
 \begin_layout Enumerate
 Lezioni frontali (come gruppo 2) con l'aggiunta di ore supplementari di
  attivit di laboratorio, in cui gli studenti potevano utilizzare singolarmente
- un'applicazione (JHAVE' [??]) che permette di osservare l'animazione degli
- algoritmi integrata con domande ad-hoc.
+ un'applicazione (JHAVE' 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{JHAVE}
+\end_layout
+
+\end_inset
+
+) che permette di osservare l'animazione degli algoritmi integrata con domande
+ ad-hoc.
  
 \end_layout
 
@@ -255,18 +357,42 @@ A seguito di queste attivit, gli studenti sono stati esaminati con un test
 \end_layout
 
 \begin_layout Standard
-I risultati ottenuti si sono rilevati concordi con [7,8] in quanto rapportando
- le conoscenze iniziali degli studenti con gli esiti dei test di verifica,
- si osservato che maggiore l'interazione con lo strumento di supporto, maggiori
- sono i progressi ottenuti dagli studenti.
+I risultati ottenuti si sono rilevati concordi con 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{byrne}
+\end_layout
+
+\end_inset
+
+ in quanto rapportando le conoscenze iniziali degli studenti con gli esiti
+ dei test di verifica, si osservato che maggiore l'interazione con lo strumento
+ di supporto, maggiori sono i progressi ottenuti dagli studenti.
 \end_layout
 
 \begin_layout Standard
 A seguito di questo studio si quindi potuto supporre che i risultati non
- significativi di [9] fossero dovuti ad un'inadeguata tecnica di raccolta:
- nel caso delle domande gli studenti, lasciati liberi a se stessi e non
- confinati in un laboratorio, hanno affrontato il tool come un gioco e non
- come uno strumento educativo.
+ significativi di 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{jarc}
+\end_layout
+
+\end_inset
+
+ fossero dovuti ad un'inadeguata tecnica di raccolta: nel caso delle domande
+ gli studenti, lasciati liberi a se stessi e non confinati in un laboratorio,
+ hanno affrontato il tool come un gioco e non come uno strumento educativo.
 \end_layout
 
 \begin_layout Standard
@@ -286,9 +412,22 @@ Come creare un buon AV
 \end_layout
 
 \begin_layout Standard
-Algoviz [5] costituisce il sito di riferimento per studenti docenti e chiunque
- altro sia interessato nella ricerca di un'applicazione che raccolga visualizzaz
-ioni di algoritmi, o l'animazione di una particolare struttura.
+Algoviz 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{wikiAlgoViz}
+\end_layout
+
+\end_inset
+
+ costituisce il sito di riferimento per studenti docenti e chiunque altro
+ sia interessato nella ricerca di un'applicazione che raccolga visualizzazioni
+ di algoritmi, o l'animazione di una particolare struttura.
  Dal 2006 il sito raccoglie in un proprio archivio (continuamente aggiornato)
  tutte gli strumenti rintracciabili sul web relativi a questo argomento.
  Tale sito stato anche il punto di partenza di questa tesi, in quanto ha
@@ -452,11 +591,24 @@ Strumenti Disponibili
 \end_layout
 
 \begin_layout Standard
-La relazione [2] redatta dal gruppo di lavoro di Algoviz [¹], illustra il
- lavoro di raccolta di AV da essi realizzato nel 2006: sono stati trovati
- circa 350 AV all'epoca, che sono quindi stati raccolti e classificati nel
- catalogo presente nel sito, il quale settimanalmente aggiornato e ad oggi
- contiene pi di 500 visualizzazioni.
+La relazione 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{AlgoViz}
+\end_layout
+
+\end_inset
+
+ redatta dal gruppo di lavoro di Algoviz, illustra il lavoro di raccolta
+ di AV da essi realizzato nel 2006: sono stati trovati circa 350 AV all'epoca,
+ che sono quindi stati raccolti e classificati nel catalogo presente nel
+ sito, il quale settimanalmente aggiornato e ad oggi contiene pi di 500
+ visualizzazioni.
  Gran parte degli strumentu catalogati riguarda gli argomenti principali
  dell'insegnamento di Algoritmi e Strutture dati, primo fra tutti il problema
  dell'ordinamento, al quale seguono le strutture di ricerca (ABR) strutture
@@ -507,7 +659,20 @@ status collapsed
 
 \end_inset
 
- Il software Animal [11] fornisce 
+ Il software Animal 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{Animal}
+\end_layout
+
+\end_inset
+
+ fornisce 
 \end_layout
 
 \begin_layout Description
@@ -562,7 +727,90 @@ status collapsed
 \end_layout
 
 \begin_layout Standard
-[inserire magari un paio di immagini di screenshot di Animale JHAVE]
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[htbp]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[scale=0.25]{images/Animal_screenshot.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Screenshot di Animal}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end {figure}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[scale=0.25]{images/JHAVE_screenshot.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Screenshot di JHAVE}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_body

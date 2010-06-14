@@ -37,6 +37,7 @@
 \tracking_changes false
 \output_changes false
 \author "" 
+\author "" 
 \end_header
 
 \begin_body
@@ -176,35 +177,362 @@ Durante la realizzazione del progetto, si è osservato che per alcune categorie
 \end_layout
 
 \begin_layout Standard
-Per questo motivo si è scelto di dividere la raccolta di attività in due
- sottoinsiemi: gli esercizi e le simulazioni.
- Per la prima parte si sono realizzati esercizi di simulazione 
+Per questo motivo si è scelto di dividere la raccolta di problemi in due
+ sottoinsiemi: gli esercizi e le animazioni.
+ Per la prima parte si sono realizzati esercizi di simulazione molto simili
+ a quelli forniti da Trackla2, mentre per la seconda parte sono stati prodotte
+ animazioni dell'algoritmo, analoghe alla modalità 
+\begin_inset Quotes eld
+\end_inset
+
+Model Answer
+\begin_inset Quotes erd
+\end_inset
+
+ degli esercizi.
+ Per le simulazioni, è stata quindi sacrificata un po' di interattività
+ a favore di una maggiore chiarezza dell'esercizio.
 \end_layout
 
 \begin_layout Subsection
-Input a scelta
-\end_layout
-
-\begin_layout Subsection
-Documentazione algoritmo laterale
-\end_layout
-
-\begin_layout Subsection
-Domande relative esercizio
-\end_layout
-
-\begin_layout Subsection
-testo di aiuto
-\end_layout
-
-\begin_layout Section
 \begin_inset CommandInset label
 LatexCommand label
-name "sec:Come-si-usa"
+name "sub:Input-a-scelta"
 
 \end_inset
 
-Come si usa
+Input a scelta
+\end_layout
+
+\begin_layout Standard
+In accordo con i risultati degli studi di cui si parla nel capitolo 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "SCORRETTA:Ref: capitolo1"
+
+\end_inset
+
+, è stata aggiunta al programma la possibilità per l'utente di inserire
+ dati in ingresso scelti personalmente.
+ Il software Trakla2 invece automaticamente generava un insieme di dati
+ casuali.
+\end_layout
+
+\begin_layout Standard
+Questa nuova funzione garantisce un buon livello di interattività dell'utente,
+ con il minimo sforzo da parte di quest'ultimo: lo studente può infatti
+ inserire particolari dati per osservare il comportamento dell'algoritmo
+ nei casi limite.
+ E' sempre comunque permesso l'utilizzo di input casuali generati dal sistema.
+\end_layout
+
+\begin_layout Standard
+La preferenza per una particolare tipologia di input avviene successivamente
+ alla scelta dell'esercizio: allo studente si presenta una finestra in cui
+ deve decidere se utilizzare i propri dati oppure farli generare al programma.
+ Se opta per l'input personalizzato, a seconda dell'esercizio in analisi
+ utilizzerà diversi tecniche per l'inserimento.
+ In particolare il diverso procedimento dipende dal tipo di struttura dati
+ che utilizza l'algoritmo.
+ Il primo passo è comune alle tre tecniche: l'utente deve inserire l'elenco
+ delle chiavi (elementi di un vettore, nodi di un grafo, nomi dei punti)
+ all'interno di un campo di testo.
+ In alcuni casi non è previsto l'inserimento di queste chiavi, in quanto
+ non sono necessarie per la particolare simulazione.
+ La dimensione dell'input è definita implicitamente in questo passaggio.
+ Il prossimo è invece discriminante delle varie tecniche, e lo analizziamo
+ nel dettaglio:
+\end_layout
+
+\begin_layout Itemize
+Esercizi 
+\begin_inset Quotes eld
+\end_inset
+
+normali
+\begin_inset Quotes erd
+\end_inset
+
+, in questa categoria rientrano tutti gli esercizi che non utilizzano particolar
+i strutture dati (grafi o aree geometriche), e quindi principalmente contengono
+ vettori e/o alberi.
+ Se l'esercitazione necessita solo di un elenco di valori-chiave con i quali
+ riempire la struttura, allora nessun'altra finestra viene visualizzata,
+ e lo studente passa direttamente all'attività di simulazione.
+ Se sono previsti dati aggiuntivi, come per esempio i parametri di una funzione
+ di hashing, si presenta una finestra in cui è possibile inserire i valori
+ di suddetti parametri aggiuntivi.
+\end_layout
+
+\begin_layout Itemize
+Grafi, la creazione di un grafo necessita di un elenco di nodi, ma soprattutto
+ della relazione di adiacenza tra questi.
+ Nell'applicazione l'inserimento di tale informazione è stato realizzato
+ tramite una matrice di adiacenza.
+ Lo studente si trova di fronte ad una seconda finestra, in cui è presentata
+ una matrice costruita nel seguente modo: le cui righe e colonne sono etichettat
+e con i nodi precedentemente inseriti, ed ogni elemento interno è un'area
+ di testo (se il grafo ha archi pesati) in cui si deve inserire il peso
+ del relativo arco (0 equivale a arco assente), oppure una casella di spunta
+ per indicare se esiste o meno un arco tra i due nodi.
+ Se si sta parlando di un grafo non orientato, è possibile inserire le informazi
+oni della relazione solo nella parte triangolare inferiore della matrice.
+\end_layout
+
+\begin_layout Itemize
+Geometria, per i due problemi di geometria computazionale è stato creata
+ una tecnica di input molto simile al primo tipo, in cui è possibile inserire
+ le coppie di coordinate (x,y) di ogni punto precedentemente aggiunto.
+\end_layout
+
+\begin_layout Standard
+Inizialmente era prevista anche un'ulteriore tipologia di inserimento dati:
+ i Test Cases [tradurre].
+ Essi prevedevano di fornire un paricolare insieme di dati preparati dal
+ programmatore (come suggerito della guida 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{wikiAlgoViz}
+\end_layout
+
+\end_inset
+
+) che permettessero allo studente di osservare il comportamento dell'algoritmo
+ in situazioni limite, poichè egli potrebbe non avere l'intuizione corretta
+ per realizzarle tramite un input personalizzato.
+ Successivamente questa possibilità è stata accantonata per problemi di
+ tempi nel completamento del progetto, e per concentrarsi su altri aspetti
+ dell'applicazione.
+ L'inserimento di tale funzione in un secondo momento non è comunque esclusa.
+\end_layout
+
+\begin_layout Subsection
+Documentazione algoritmo
+\end_layout
+
+\begin_layout Standard
+Sono state fatte alcune integrazioni anche dal punto di vista dell'interfaccia
+ grafica del software, in particolare per la finestra di simulazione degli
+ esercizi, che sono descritte in questa e nelle due sezioni successive.
+\end_layout
+
+\begin_layout Standard
+Per prima cosa è stato aggiunto un pannello laterale nella parte sinistra
+ della finestra, che contiene a sua volta tre pannelli tab [tabpanel..
+ come si traduce?].
+ In questa sezione analizzeremo due di questi pannelli.
+\end_layout
+
+\begin_layout Standard
+Il pannello 
+\begin_inset Quotes eld
+\end_inset
+
+Descrizione
+\begin_inset Quotes erd
+\end_inset
+
+ contiene alcune informazioni dell'algoritmo, in particolare una breve descrizio
+ne del problema affrontato, e le istruzioni fondamentali per poter affrontare
+ la simulazione nell'esercizio.
+ 
+\end_layout
+
+\begin_layout Standard
+Un secondo pannello contiene lo pseudo codice dell'algoritmo in questione,
+ ed è tratto dal libro 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{libro}
+\end_layout
+
+\end_inset
+
+.
+ In alcuni casi il codice di un particolare problema non era presente su
+ questo libro, e quindi si riferisce ad un altro libro 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{cormen}
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+La gestione dei testi relativi ad ogni esercizio è stata realizzata con
+ l'aiuto di un file di testo esterno al codice, contenente tutte queste
+ proprietà.
+ In questo modo si semplificano eventuali modifiche future della documentazione,
+ che non necessitano la compilazione del codice sorgente, ma che consistono
+ semplicemente in un aggiornamento di questo file.
+ Inoltre, si permette ad un potenziale docente che utilizza un diverso testo
+ per il proprio corso, di aggiornare i codici e le informazioni degli algoritmi
+ secondo le proprie preferenze.
+\end_layout
+
+\begin_layout Standard
+La scelta di aggiungere questa sezione informativa al software è stata fatta
+ in seguito all'analisi degli altri programmi disponibili 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "SCORRETTA:Ref: sec:Strumenti-Disponibili"
+
+\end_inset
+
+, ma che JHAVE' 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{JHAVE}
+\end_layout
+
+\end_inset
+
+ il quale forniva allo studente una documentazione sull'argomento come integrazi
+one all'esercizio.
+ Anche qui i testi di sussidio non erano integrati nel codice, ma memorizzati
+ in pagine html [verificare].
+\end_layout
+
+\begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Domande-relative-esercizio"
+
+\end_inset
+
+Domande relative esercizio
+\end_layout
+
+\begin_layout Standard
+Un'altra funzionalità che è stata aggiunta al programma prendendo spunto
+ dalle caratteristiche di JAHVE' 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{JHAVE}
+\end_layout
+
+\end_inset
+
+, è la possibilità di confrontarsi con alcune domande a proposito dell'algoritmo
+ o della struttura dati analizzati.
+ Nel programma JHAVE, l'animazione del problema viene interrotta ponendo
+ domande sull'argomento allo studente, con una frequenza che varia a seconda
+ di alcuni parametri impostati dal programmatore.
+ Lo studente per poter continuare l'animazione deve rispondere alle domande
+ che gli sono poste.
+ Provando ad utilizzare questo programma, alcuni studenti del corso di Informati
+ca hanno trovato fastidioso essere continuamente fermati nella presentazione
+ da queste domande.
+ Nel nuovo progetto realizzato si è quindi optato per inserire la possibilità
+ di rispondere alle domande, ma a scelta dello studente.
+\end_layout
+
+\begin_layout Standard
+Il pulsante per poter sottoporsi ad una domanda è posto nel terzo pannello
+ sulla sinistra, insieme ai due di cui si è parlato nelle sezioni precedenti.
+ Le domande, che variano da 3 a 5 per ogni esercizio, sono di due tipologie:
+ a scelta multipla o a risposta aperta (in cui lo studente risponde scrivendo
+ all'interno di un campo di testo), e vengono visualizzate tramite una piccola
+ finestra.
+ Una volta inserita la risposta, il programma comunica allo studente se
+ è esatta o meno; nel caso fosse sbagliata viene visualizzata la soluzione
+ giusta.
+ Le domande e le loro risposte sono inserite direttamente nel codice di
+ ogni esercizio.
+ Questo è sicuramente un punto debole, e quindi un miglioramento futuro
+ potrà trasportarle all'esterno del codice, magari in un file di testo esterno,
+ come per la documentazione degli esercizi.
+\end_layout
+
+\begin_layout Standard
+E' stata inoltre sperimentata la possibilità di creare domande 
+\begin_inset Quotes eld
+\end_inset
+
+dinamiche
+\begin_inset Quotes erd
+\end_inset
+
+, ovvero che interagiscono direttamente con il contenuto dell'esercizio.
+ Per esempio in un esercizio di inserimento di dati in un albero di ricerca
+ binario, si potrebbe chiedere: 
+\begin_inset Quotes eld
+\end_inset
+
+In quale nodo andrà inserita la prossima chiave K
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\begin_inset Quotes eld
+\end_inset
+
+(Risposta) S
+\begin_inset Quotes erd
+\end_inset
+
+.
+ In questo caso, sia la domanda che la risposta, saranno modificate con
+ i dati dell'esercizio, sostituendo a K il valore della chiave che si è
+ prossimi ad inserire nella struttura, e a S il nome del nodo che diventerà
+ padre di K.
+\end_layout
+
+\begin_layout Subsection
+FeedBak RealTime
+\end_layout
+
+\begin_layout Standard
+I programmi di animazione di algoritmi sono usati spesso da studenti alle
+ prime armi con un determinato argomento, e che hanno bisogno di vedere
+ e toccare con mano per riuscire a focalizzare al meglio il problema.s Uno
+ studente non ferrato in un particolare algoritmo non riuscirà a simulare
+ correttamente già la prima volta l'esercizio, e dovrà ricorrere continuamente
+ alla funzione di Model Answer per controllare se si sta muovendo correttamente
+ nella struttura dati.
+ Per agevolare il primo apprendimento dell'argomento, si è quindi pensato
+ di aggiugere, sempre nella parte sinistra dello schermo, un'area di testo
+ che reagisce ai cambiementi effettuati dall'utente sulle strutture dati,
+ modificando il proprio testo e comunicando attraverso questo allo studente
+ se la simulazione di ogni passo è corretta.
+ Per ogni esercizio il criterio con cui si stabilisce se un particolare
+ passo è corretto, e il testo che di conseguenza deve apparire, sono diversi
+ e incorporati nel codice.
+\end_layout
+
+\begin_layout Standard
+Per un utente esperto che vuole verificare le proprie conoscenze, questa
+ funzione può essere di disturbo: è stata perciò inserita la possibilità
+ di disattivare l'area di testo semplicemente un pulsante.
+ L'area può essere tuttavia riattivata in un secondo momento.
 \end_layout
 
 \begin_layout Section
@@ -217,17 +545,185 @@ name "sec:Esempi"
 Esempi
 \end_layout
 
-\begin_layout Section
-Implementazione
+\begin_layout Standard
+descrizione di due esempi uno per simulazione esercizio, l'altro per animazione.
+ 
+\end_layout
+
+\begin_layout Subsection
+esercizio ABR insert
 \end_layout
 
 \begin_layout Standard
-uno schema veloce delle classi, magari anche un activity con le operazioni
- base che pu fare lo studente
+descrizione esercizio abr insert
+\end_layout
+
+\begin_layout Subsection
+Esercizio Fibonacci o Graham
+\end_layout
+
+\begin_layout Standard
+descrizione esercizio Fibonacci
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[htbp]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[scale=0.4]{images/StateChart.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Diagramma utilizzo dello studente}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure} 
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
 Conlusioni capitolo e problemi riscontrati
+\end_layout
+
+\begin_layout Standard
+Lo scopo finale di questo lavoro era la realizzazione di un programma che
+ permettesse allo studente di Algoritmi e Struture Dati di avere un supporto
+ al corso più interattivo rispetto ai programmi già disponibili.
+ In quanto programma sperimentale, il software risultante è ricco di nuove
+ funzioni che aumentano la partecipazione dell'utente nell'attività, ma
+ che purtroppo non sono ancora perfette.
+\end_layout
+
+\begin_layout Standard
+Come si è già accennato in questo capitolo, le migliorie introdotte possono
+ essere ulteriormente perfezionate, per fornire agli studenti un valido
+ aiuto per lo studio.
+ Nonostante non siano state ancora realizzate nel progetto, sono già state
+ concepite pianificate alcune modifiche:
+\end_layout
+
+\begin_layout Description
+Domande Innanzi tutto si potrebbe aumentare la quantità di domande per ogni
+ esercizio, e migliorare il sistema di inserimento delle risposte: ad oggi
+ il sistema giudica diverse le riposte 
+\begin_inset Quotes eld
+\end_inset
+
+O(nlogn)
+\begin_inset Quotes erd
+\end_inset
+
+ e 
+\begin_inset Quotes eld
+\end_inset
+
+O(n logn)
+\begin_inset Quotes erd
+\end_inset
+
+.
+ Come è già stato accennato in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Domande-relative-esercizio"
+
+\end_inset
+
+, sarebbe utile spostare le domande in un file di testo esterno, di modo
+ che non sia necessario ri-compilare tutto il codice del programma nel caso
+ si modifichi solo una domanda, e per permettere ad un docente interessato
+ di personalizzare le domande in accordo con il proprio programma di studio.
+\end_layout
+
+\begin_layout Description
+Input1 Nella sezione 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Input-a-scelta"
+
+\end_inset
+
+, si parla della possibilità si fornire una terza tipologia di input, i
+ 
+\begin_inset Quotes eld
+\end_inset
+
+Test Cases
+\begin_inset Quotes erd
+\end_inset
+
+, ovvero un insieme di dati preparati ad hoc per ogni algoritmo, per evidenziare
+ particolari comportamenti e caratteristiche del problema in analisi.
+ Sicuramente questa potrebbe essere una delle prime integrazioni al programma
+ della tesi.
+ Un ulteriore miglioria possibile attuabile, poterbbe consistere nel permettere
+ di memorizzare in un file di testo i test case per ogni esercizio, che
+ sarebbero modificabili da un docente, come per domande e documentazione
+\end_layout
+
+\begin_layout Description
+Input2 La tecnica di inserimento dei dati potrebbe inoltre essere integrata
+ con il sistema di creazione di animazioni 
+\begin_inset Quotes eld
+\end_inset
+
+al volo
+\begin_inset Quotes erd
+\end_inset
+
+ di MatrixPro.
+ Il software, come spiegato in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:MatrixPro-e-Trackla2"
+
+\end_inset
+
+, permette di inserire e personalizzare strutture dati preinstallate nell'applic
+azione per poter creare animazioni.
+ Sarebbe un grande passo avanti permettere agli utenti del programma di
+ inserire i dati di input di un esercizio con lo stesso sistema di creazione
+ della animazioni di MatrixPro: sicuramente renderebbe gli studenti più
+ fantasiosi nel creare casi limite, soprattutto con strutture grafiche come
+ grafi e alberi.
+\end_layout
+
+\begin_layout Description
+Esercizi Il programma di un corso di Algoritmi è sicuramente vasto, e per
+ ogni argomento una dimostrazione non basta di sicuro.
+ Potrebbe essere necessario in futuro allargare la raccolta di esercizi
+ per fornire agli studenti un percorso ricco e completo di supporto al proprio
+ corso di studi.
+ 
 \end_layout
 
 \end_body

@@ -7,15 +7,15 @@
 
 \subsection{Creare Animazioni con MatrixPro}
 
-MatrixPro {[}1{]} un software con licenza GPL2, ed quindi gratuito
-e open source. Il tool  stato creato per permettere a studenti, ma
-soprattutto ad insegnanti, di creare velocemente animazioni personalizzate
+MatrixPro \cite{MatrixPro} un software con licenza GPL2, ed quindi
+gratuito e open source. Il tool  stato creato per permettere a studenti,
+ma soprattutto ad insegnanti, di creare velocemente animazioni personalizzate
 su strutture dati preesistenti nel programma. L'applicazione molto
-utile come spiegano gli sviluppatori nell'articolo {[}1{]} per rendere
-pi coinvolgenti le lezioni universitarie, con presentazioni animate
-precedentemente create dal docente, o addirittura create al volo durante
-la lezione, per riuscire a rispondere con la dimostrazione visiva
-a domande e dubbi degli studenti.
+utile come spiegano gli sviluppatori nell'articolo \cite{MatrixPro}
+per rendere pi coinvolgenti le lezioni universitarie, con presentazioni
+animate precedentemente create dal docente, o addirittura create al
+volo durante la lezione, per riuscire a rispondere con la dimostrazione
+visiva a domande e dubbi degli studenti.
 
 Tra i punti di forza di questo applicativo troviamo la semplicit
 con cui possono essere utilizzate le strutture dati esistenti, ma
@@ -53,10 +53,8 @@ oggetto Java serializzabile, e si potr modificarla nuovamente in
 un secondo momento. Inoltre MatrixPro permette di esportare il proprio
 lavoro in 3 formati:
 \begin{description}
-\item [{\inputencoding{latin1}\LaTeX{}\inputencoding{latin9}}] \foreignlanguage{english}{immagine
-in formato .tex che  possibile includere facilmente nei documenti
-Latex }
-\selectlanguage{english}%
+\item [{\LaTeX{}}] immagine in formato .tex che  possibile includere facilmente
+nei documenti Latex 
 \item [{SVG}] che al momento a me non so perch ma non funziona.. (Scalable
 Vector Graphics) l'esportazione in tale formato permette di salvare
 un'animazione alla quale viene incluso anche un pannello di controllo
@@ -66,20 +64,23 @@ fa il software MatrixPro al suo interno.
 permette si creare una fotografia di un particolare momento dell'animazione
 dell'algoritmo, che viene salvata in un file immagine PNG.
 \end{description}
-\selectlanguage{english}%
 
 \subsection{Il sistema Trakla2}
 
-A partire dalla versione ???? del software, si trova all'interno del
-pacchetto che viene fornito da MatrixPro una funzionalit molto interessante,
-che  stata chiamata Trakla2. Questa parte del sistema consiste in
-un insieme di {}``esercizi'', creati a partire dal sistema MatrixPro,
-all'interno dei quali lo studente deve simulare il comportamento di
-un particolare algoritmo interagendo con le strutture grafiche. Si
-accede a questi esercizi tramite il men Exercise nella barra dei
+A partire dalla versione {[}????{]} del software, si trova all'interno
+del pacchetto che viene fornito da MatrixPro una funzionalit molto
+interessante, che  stata chiamata Trakla2. Questa parte del sistema
+consiste in un insieme di {}``esercizi'', creati a partire dal sistema
+MatrixPro, all'interno dei quali lo studente deve simulare il comportamento
+di un particolare algoritmo interagendo con le strutture grafiche.
+Si accede a questi esercizi tramite il men Exercise nella barra dei
 menu in alto.
 
-{[}inserire immagine trakla\_screenshot{]}
+\begin{figure}
+\centering
+\includegraphics[scale=0.35]{images/trakla_screenshot.png}
+\caption{Screenshot del sistema Trakla2}
+\end{figure}
 
 L'utente esegue i passi dell'algoritmo trascinando con il mouse {[}drag\&drop{]}
 gli elementi delle strutture. I cambiamenti del sistema sono automaticamente
@@ -156,4 +157,3 @@ all'utente un livello maggiore di interattivit, pur fornendo anche
 un'animazione {}``normale'' di molti algoritmi come gli altri applicativi
 disponibili. Per quest'ultimo motivo la scelta finale  ricaduta sul
 software MatrixPro.
-
