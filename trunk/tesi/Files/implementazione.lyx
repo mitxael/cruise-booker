@@ -4,8 +4,8 @@
 \begin_header
 \textclass article
 \use_default_options false
-\language english
-\inputencoding auto
+\language italian
+\inputencoding utf8
 \font_roman default
 \font_sans default
 \font_typewriter default
@@ -69,14 +69,7 @@ reference "sec:Esempi"
 
 \end_inset
 
-, e una breve spiegazione sull'utilizzo da parte dello studente
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:Come-si-usa"
-
-\end_inset
-
-.
+, per spiegare brevemente l'utilizzo dell'applicazione da parte degli studenti.
 \end_layout
 
 \begin_layout Section
@@ -100,17 +93,68 @@ Una volta scelta l'attività, allo studente si apre un'ulteriore finestra,
  il proprio risultato, e di vederne la risoluzione corretta.
 \end_layout
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[htbp]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[scale=0.4]{images/Menu.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Menu iniziale}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Modifiche-apportate"
+
+\end_inset
+
 Modifiche apportate
 \end_layout
 
 \begin_layout Standard
-E' stato scelto di sviluppare solo esercizi di simulazione di algoritmi
- perchè in questo modo lo studente è il protagonista effettivo dell'animazione.
+E' stato scelto di sviluppare esclusivamente esercizi di simulazione di
+ algoritmi perchè in questo modo lo studente è il protagonista effettivo
+ dell'animazione.
  Il programma quindi non permette all'utente di realizzare una propria animazion
-e, in quanto questa funzione del programma MatrixPro non è stata inclusa
- nel nuovo software.
- E' stata effettuata questa scelta per due motivazioni: 
+e, in quanto questa funzione di MatrixPro non è stata inclusa nel nuovo
+ software.
+ Questa scelta è stata presa per due motivazioni: 
 \end_layout
 
 \begin_layout Itemize
@@ -122,24 +166,17 @@ reference "capitolo1"
 
 \end_inset
 
-) che siano più portati a utilizzare e 
-\begin_inset Note Note
-status open
-
-\begin_layout Plain Layout
-inteso come dati input..come si può dire??
-\end_layout
-
-\end_inset
-
-personalizzare le visualizzazioni piuttosto che a creare nuove animazioni.
+) che siano più portati a utilizzare le visualizzazioni e sperimentarne
+ il comportamento attraverso l'inserimento di nuovi dati, piuttosto che
+ a creare nuove animazioni;
 \end_layout
 
 \begin_layout Itemize
 esistono già validi strumenti per la creazione di animazioni personalizzate,
- come MatrixPro, che permettono di realizzarle semplicemente anche in pochi
- minuti; l'obiettivo di questa tesi era di realizzare qualcosa di nuovo
- e poco diffuso, piuttosto di creare un programma che è gia disponibile.
+ come per l'appunto il software MatrixPro, che permettono di realizzarle
+ semplicemente anche in pochi minuti; l'obiettivo di questa tesi è di realizzare
+ qualcosa di nuovo e poco diffuso, piuttosto che creare un programma già
+ disponibile.
 \end_layout
 
 \begin_layout Standard
@@ -149,17 +186,19 @@ Inoltre, se si rendesse necessario, è possibile in un secondo momento integrare
 \end_layout
 
 \begin_layout Standard
-[parlare della scelta iniziale???]
-\end_layout
-
-\begin_layout Standard
 Per realizzare al meglio un'applicazione semplice nell'uso, e soprattutto
  interattiva, sono state apportate alcune modifiche ed estenzioni al programma
- origianale.
+ originale.
  Nelle prossime sezioni saranno analizzate in dettaglio le variazioni.
 \end_layout
 
 \begin_layout Subsection
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Tipologie-di-Esercizi"
+
+\end_inset
+
 Tipologie di Esercizi
 \end_layout
 
@@ -546,24 +585,143 @@ Esempi
 \end_layout
 
 \begin_layout Standard
-descrizione di due esempi uno per simulazione esercizio, l'altro per animazione.
- 
+In questa sezione sono descritti due esercizi del programma, rappresentativi
+ delle due tipologie spiegate nella sezione 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Tipologie-di-Esercizi"
+
+\end_inset
+
+.
+ In particolare si analizza per la categoria degli esercizi di simulazione
+ l'Inserimento in un Albero Binario di Ricerca, e per la categoria delle
+ animazioni, il calcolo del numero di Fibonacci con la programmazione dinamica.
 \end_layout
 
 \begin_layout Subsection
-esercizio ABR insert
+\begin_inset CommandInset label
+LatexCommand label
+name "sub:Inserimento-di-Chiavi"
+
+\end_inset
+
+Inserimento di Chiavi in un Albero Binario di Ricerca
 \end_layout
 
 \begin_layout Standard
-descrizione esercizio abr insert
-\end_layout
+Lo studente, una volta scelto l'esercizio dall'elenco principale, ha la
+ possibilità di scegliere il metodo di inserimento dei dati che preferisce.
+ Come si è spiegato in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Input-a-scelta"
 
-\begin_layout Subsection
-Esercizio Fibonacci o Graham
+\end_inset
+
+, le opzioni disponibili sono di inserire le informazioni, oppure di lasciare
+ che siano generate casualmente dal programma.
+ Nel primo caso, l'utente deve inserire in un campo di testo gli elementi
+ che desidera inserire nell'albero, che devono essere lettere separate da
+ una virgola.
+ Se i dati inseriti non sono corretti (ad esempio una stringa vuota), l'applicaz
+ione ripropone allo studente la finestra di scelta dell'input, in modo che
+ al momento della generazione dell'esercizio i dati siano presenti e corretti.
 \end_layout
 
 \begin_layout Standard
-descrizione esercizio Fibonacci
+L'utente si trova quindi di fronte alla finestra dell'esercizio vero e proprio.
+ Sulla sinistra dello schermo si trova il pannello laterale contenente le
+ funzioni aggiuntive descritte in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Modifiche-apportate"
+
+\end_inset
+
+.
+ In questo esercizio l'area di testo dedicata ai messaggi del programma,
+ al momento è vuota, e in seguito conterrà il risultato della visita in
+ ordine dell'albero quando l'utente inserisce correttamente i nodi, oppure
+ un messaggio di errore 
+\begin_inset Quotes eld
+\end_inset
+
+Attento!
+\begin_inset Quotes erd
+\end_inset
+
+ quando commette un qualche sbaglio nell'inserimento.
+\end_layout
+
+\begin_layout Standard
+Nella parte superiore è presente un pannello contenente quattro pulsanti
+ e una barra di scorrimento chiamato Animatore [controllare], il quale permette
+ durante la simulazione dell'algoritmo di muoversi all'interno dell'animazione
+ creata fino a quel momento, concedendo anche l'opportunità di modificare
+ i passi precedenti.
+\end_layout
+
+\begin_layout Standard
+Infine al centro della finestra si trova il pannello principale contenente
+ le strutture grafiche interattive, chiamato Structure Panel.
+ In questo esempio al suo interno si trovano un vettore contenente le chiavi
+ inserite in precedenza, e un albero al momento costituito solo da un nodo
+ vuoto.
+ Come descritto del pannello 
+\begin_inset Quotes eld
+\end_inset
+
+Descrizione
+\begin_inset Quotes erd
+\end_inset
+
+ a sinistra, lo studente deve inserire nell'ordine in cui appaiono nel vettore,
+ le lettere all'interno dell'albero.
+ La relazione di confronto tra le chiavi è l'ordine alfabetico; se due chiavi
+ hanno lo stesso valore, la nuova va inserita alla destra di quella vecchia.
+\end_layout
+
+\begin_layout Standard
+Per inserire le chiavi nell'albero è necessario cliccare su di esse nel
+ vettore e trascinarle nella posizione desiderata.
+ Per facilitare questa procedura, l'applicazione evidenzia con un colore
+ rosso l'area adatta al rilascio della chiave quando viene attraversata
+ dal puntatore del mouse.
+ Se si commette qualche errore nell'inserimento, non si deve trascinare
+ nuovamente la chiave nel vettore: è necessario utilizzare i comandi soprastanti
+ di spostamento nell'animazione.
+\end_layout
+
+\begin_layout Standard
+Quando si è terminata la simulazione si hanno a disposizione alcune funzioni
+ di controllo del proprio risultato fornite anche dal programma originale,
+ che sono 
+\begin_inset Quotes eld
+\end_inset
+
+Grade
+\begin_inset Quotes erd
+\end_inset
+
+ che comunica quanti passaggi corretti sono stati effettuati, 
+\begin_inset Quotes eld
+\end_inset
+
+Model Answer
+\begin_inset Quotes erd
+\end_inset
+
+ che fornisce l'animazione dell'algoritmo e 
+\begin_inset Quotes eld
+\end_inset
+
+Compare
+\begin_inset Quotes erd
+\end_inset
+
+ che permette di confrontare passo passo l'animazione prodotta dallo studente
+ e quella corretta del programma, sia in maniera sincrona che non.
 \end_layout
 
 \begin_layout Standard
@@ -588,14 +746,138 @@ centering
 
 
 \backslash
-includegraphics[scale=0.4]{images/StateChart.png}
+includegraphics[scale=0.4]{images/ABR.png}
 \end_layout
 
 \begin_layout Plain Layout
 
 
 \backslash
-caption{Diagramma utilizzo dello studente}
+caption{Inserimento in Albero Binario di Ricerca}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{figure} 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Fibonacci
+\end_layout
+
+\begin_layout Standard
+L'esercizio del calcolo del numero di fibonacci contenuto nel programma,
+ è basato sulla tecnica della programmazione dinamica, ed è realizzato,
+ per le motivazioni espresse in 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Tipologie-di-Esercizi"
+
+\end_inset
+
+, come un'animazione e non un esercizio.
+\end_layout
+
+\begin_layout Standard
+Nonostante questo si ha, come per gli altri esercizi, la scelta di usare
+ un input casuale o di inserirlo personalmente.
+ L'esercizio di fibonacci prevede di ricevere come dato esterno solo un
+ numero intero maggiore di 0.
+ Per questo, se lo studente sceglie di inserire lui stesso i dati, non gli
+ si presenterà la finestra per l'introduzione delle chiavi, bensì quella
+ dedicata all'immissione dei parametri integrativi.
+ In questa è presente solo un campo etichettato con il nome 
+\begin_inset Quotes eld
+\end_inset
+
+n
+\begin_inset Quotes erd
+\end_inset
+
+ in cui si deve immettere il numero intero di cui si vuole calcolare il
+ relativo valore nella serie di Fibonacci.
+\end_layout
+
+\begin_layout Standard
+La finestra dell'animazione che si presenta all'utente è molto simile per
+ struttura a quella degli esercizi come 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sub:Inserimento-di-Chiavi"
+
+\end_inset
+
+, con la differenza che non è possibile interagire direttamente con le strutture
+ presenti nel pannello centrale.
+ L'attività proposta infatti non è altro che un'animazione classica, con
+ alcune integrazioni, il cui andamento può essere controllato dal pannello
+ Animatore posto nella parte superiore della finestra.
+\end_layout
+
+\begin_layout Standard
+Nella parte centrale sono poste due strutture un vettore di un elemento
+ contenente il numero di Fibonacci inserito o generato dall'applicazione,
+ e un vettore al momento vuoto.
+ Proseguendo nell'animazione si osserva il funzionamento dell'algoritmo
+ di programmazione dinamica (il cui pseudocodice è presente del pannello
+ laterale), il quale riempie l'array un elemento alla volta con il relativo
+ valore di Fibonacci.
+ Il valore contenuto nell'ultimo elemento è il numero di Fibonacci corrispondent
+e al numero inserito.
+\end_layout
+
+\begin_layout Standard
+Al termine delle animazioni, non sono disponibili le funzioni model answer
+ e grade, in quanto non si è trattato di un esercizio vero e proprio, ma
+ solo di una dimostrazione.
+ Le funzioni aggiunte 
+\begin_inset CommandInset ref
+LatexCommand ref
+reference "sec:Modifiche-apportate"
+
+\end_inset
+
+ sono invece attive: per esempio l'area di testo dedicata ai messaggi, contiene
+ ad ogni passaggio il calcolo del successivo elemento da inserire.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{figure}[htbp]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+includegraphics[scale=0.4]{images/Fibonacci.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+caption{Animazione di Fibonacci}
 \end_layout
 
 \begin_layout Plain Layout
@@ -611,119 +893,80 @@ end{figure}
 \end_layout
 
 \begin_layout Section
-Conlusioni capitolo e problemi riscontrati
+Implementazione, concetti base
 \end_layout
 
 \begin_layout Standard
-Lo scopo finale di questo lavoro era la realizzazione di un programma che
- permettesse allo studente di Algoritmi e Struture Dati di avere un supporto
- al corso più interattivo rispetto ai programmi già disponibili.
- In quanto programma sperimentale, il software risultante è ricco di nuove
- funzioni che aumentano la partecipazione dell'utente nell'attività, ma
- che purtroppo non sono ancora perfette.
+Il software MatrixPro, di cui sono disponibili i codici sorgente, è scritto
+ in codice Java e organizzato in numerosi pacchetti.
 \end_layout
 
 \begin_layout Standard
-Come si è già accennato in questo capitolo, le migliorie introdotte possono
- essere ulteriormente perfezionate, per fornire agli studenti un valido
- aiuto per lo studio.
- Nonostante non siano state ancora realizzate nel progetto, sono già state
- concepite pianificate alcune modifiche:
+Gli esercizi non sono altro che una classe Java, che a seconda della categoria
+ a cui appartengono, implementano particolari interfacce che ne definiscono
+ le caratteristiche.
+ Tutti gli esercizi per essere tali devono definire almeno le procedure
+ fondamentali come quelle di inizializzazione, quelle per definire l'interazione
+ dell'utente con le strutture, e infine quelle per creare l'animazione risultato.
 \end_layout
 
-\begin_layout Description
-Domande Innanzi tutto si potrebbe aumentare la quantità di domande per ogni
- esercizio, e migliorare il sistema di inserimento delle risposte: ad oggi
- il sistema giudica diverse le riposte 
+\begin_layout Standard
+Le interfacce grafiche sono organizzate in maniera gerarchica a seconda
+ della loro funzione.
+ La struttura principale che coinvolge gli esercizi è lo Structure Panel,
+ ovvero l'area centrale in cui sono presenti le strutture dati dell'algoritmo.
+ Il pannello gestisce l'aggiunta e il comportamento di queste strutture,
+ nonchè la loro visualizzazione.
+\end_layout
+
+\begin_layout Standard
+Anche le strutture dati sono orgranizzate in modo gerarchico, sia dal punto
+ di vista del codice, che dalla presentazione che viene offerta all'utente.
+ Sono infatti suddivise in FDT (Fundamental Data Type) e CDT (Conceptual
+ Data Type), ovvero strutture primitive e strutture astratte.
+ Le prime sono tipi basilari come vettori, liste, grafi e chiavi, e i comportame
+nti che consentono sono semplici assegnazioni e modifiche dei collegamenti
+ (per grafi e liste).
+ I CDT invece consistono in strutture più complesse per quanto riguarda
+ la loro costruzione e anche per i loro comportamenti.
+ Un esempio di questa categoria è la pila (Stack), realizzata a partire
+ da un vettore, al quale sono associate solo particolari operazioni (pop,
+ push..).
+ Le due diverse categorie di strutture possono essere utilizzate allo stesso
+ modo senza problemi negli esercizi.
+\end_layout
+
+\begin_layout Standard
+Un altro elemento fondamentale per la creazione delle animazione è la classe
+ 
 \begin_inset Quotes eld
 \end_inset
 
-O(nlogn)
-\begin_inset Quotes erd
-\end_inset
-
- e 
-\begin_inset Quotes eld
-\end_inset
-
-O(n logn)
+Animator
 \begin_inset Quotes erd
 \end_inset
 
 .
- Come è già stato accennato in 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Domande-relative-esercizio"
-
-\end_inset
-
-, sarebbe utile spostare le domande in un file di testo esterno, di modo
- che non sia necessario ri-compilare tutto il codice del programma nel caso
- si modifichi solo una domanda, e per permettere ad un docente interessato
- di personalizzare le domande in accordo con il proprio programma di studio.
-\end_layout
-
-\begin_layout Description
-Input1 Nella sezione 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sub:Input-a-scelta"
-
-\end_inset
-
-, si parla della possibilità si fornire una terza tipologia di input, i
- 
+ Essa gestisce la memorizzazione dei passi dell'animazione, e lo fa immagazzinan
+do in uno stack gli stati delle strutture interessate nella visualizzazione.
+ E' questa classe che gestisce lo spostamento all'interno dell'animazione.
+ Essa inoltre permette la valutazione tramite la funzione 
 \begin_inset Quotes eld
 \end_inset
 
-Test Cases
+Grade
 \begin_inset Quotes erd
 \end_inset
 
-, ovvero un insieme di dati preparati ad hoc per ogni algoritmo, per evidenziare
- particolari comportamenti e caratteristiche del problema in analisi.
- Sicuramente questa potrebbe essere una delle prime integrazioni al programma
- della tesi.
- Un ulteriore miglioria possibile attuabile, poterbbe consistere nel permettere
- di memorizzare in un file di testo i test case per ogni esercizio, che
- sarebbero modificabili da un docente, come per domande e documentazione
+ di un esercizio: il risultato è dato infatti confrontando passo passo la
+ simulazione del programma e quella fornita dallo studente, entrambe memorizzate
+ in un animatore.
 \end_layout
 
-\begin_layout Description
-Input2 La tecnica di inserimento dei dati potrebbe inoltre essere integrata
- con il sistema di creazione di animazioni 
-\begin_inset Quotes eld
-\end_inset
-
-al volo
-\begin_inset Quotes erd
-\end_inset
-
- di MatrixPro.
- Il software, come spiegato in 
-\begin_inset CommandInset ref
-LatexCommand ref
-reference "sec:MatrixPro-e-Trackla2"
-
-\end_inset
-
-, permette di inserire e personalizzare strutture dati preinstallate nell'applic
-azione per poter creare animazioni.
- Sarebbe un grande passo avanti permettere agli utenti del programma di
- inserire i dati di input di un esercizio con lo stesso sistema di creazione
- della animazioni di MatrixPro: sicuramente renderebbe gli studenti più
- fantasiosi nel creare casi limite, soprattutto con strutture grafiche come
- grafi e alberi.
-\end_layout
-
-\begin_layout Description
-Esercizi Il programma di un corso di Algoritmi è sicuramente vasto, e per
- ogni argomento una dimostrazione non basta di sicuro.
- Potrebbe essere necessario in futuro allargare la raccolta di esercizi
- per fornire agli studenti un percorso ricco e completo di supporto al proprio
- corso di studi.
- 
+\begin_layout Standard
+Lo sviluppo di nuovi esercizi consiste quindi nella programmazione di nuove
+ classi Esercizio, e nella realizzazione, se necessario, di nuove strutture
+ dati, progettate a partire da quelle già presenti nell'applicazione.
 \end_layout
 
 \end_body
