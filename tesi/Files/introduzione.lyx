@@ -4,8 +4,8 @@
 \begin_header
 \textclass article
 \use_default_options false
-\language english
-\inputencoding auto
+\language italian
+\inputencoding utf8
 \font_roman default
 \font_sans default
 \font_typewriter default
@@ -70,7 +70,7 @@ Introduzione
 \end_layout
 
 \begin_layout Standard
-boh..
+da fareÈ
 \end_layout
 
 \begin_layout Section
@@ -78,9 +78,9 @@ Animazione e Simulazione
 \end_layout
 
 \begin_layout Standard
-A partire dagli anni '80, lo sviluppo animazioni per la visualizzazione
- di algoritmi stata in continuo aumento.
- La prima testimonianza che si ha 
+A partire dagli anni '80, lo sviluppo di animazioni per la visualizzazione
+ di algoritmi è stato in continuo aumento.
+ Una tra le prime testimonianze che si ha di questo fenomeno è 
 \begin_inset Quotes eld
 \end_inset
 
@@ -101,14 +101,14 @@ cite{video}
 
 \end_inset
 
-, un video di presentazione degli algoritmi di ordinamento, primo nel suo
- genere.
+, un video di presentazione degli algoritmi di ordinamento, una novità nel
+ suo genere.
 \end_layout
 
 \begin_layout Standard
 Dal 1981 fino ad oggi, le rappresentazioni di algoritmi e strutture dati
- si sono diffuse ed hanno trovato il loro scopo finale come supporto per
- studenti ed insegnanti nei relativi corsi universitari.
+ si sono diffuse ed hanno trovato il loro principale utilizzo come supporto
+ per studenti ed insegnanti nei relativi corsi universitari.
 \end_layout
 
 \begin_layout Standard
@@ -126,31 +126,25 @@ cite{MatrixPro}
 
 \end_inset
 
-, possiamo riconoscere che esistono principalmente due forme in cui si sono
- sviluppati i tool di algorithm visualization: l'animazione e la simulazione.
-\end_layout
-
-\begin_layout Standard
-La prima consiste in una visualizzazione degli effetti che un algoritmo
- predefinito ha su una struttura dati definita dal programmatore.
- L'utente, in questo caso, assiste passivamente all'animazione osservandone
+, possiamo riconoscere che esistono principalmente due direzioni in cui
+ si sono sviluppati i programmi di AV (Algorithm Visualization): l'animazione
+ e la simulazione.La prima consiste in una visualizzazione degli effetti
+ che un predefinito algoritmo ha su una struttura dati creata dal programmatore;
+ l'utente, in questo caso, assiste passivamente all'animazione osservandone
  i risultati sulla struttura dati.
-\end_layout
-
-\begin_layout Standard
-Nel secondo caso parliamo di simulazione in quanto l'utente manipola gli
- oggetti messi a disposizione dal programmatore secondo le modifiche permesse
- dalla struttura in modo da creare una sequenza di passi analoghi a quelli
+ Nel secondo caso parliamo di simulazione, in quanto l'utente manipola gli
+ oggetti messi a disposizione dal programmatore secondo le operazioni permesse
+ dalla struttura, in modo da creare una sequenza di passi analoghi a quelli
  dell'algoritmo che si sta analizzando.
 \end_layout
 
 \begin_layout Standard
-Naturalmente questa una classificazione grossolana, in quanto ogni tool
- ha le sue particolari caratteristiche.
- Le funzionalit introdotte negli anni nelle varie applicazioni disponibili
- hanno permesso una seconda classificazione pi accurata in base all'interazione
- che tali visualizzazioni hanno con gli studenti.
- Il risultato di gruppo di lavoro su 
+Naturalmente questa è una classificazione grossolana, in quanto ogni software
+ possiede proprie particolari caratteristiche.
+ Le funzionalità introdotte negli anni nelle varie applicazioni disponibili,
+ hanno permesso una seconda classificazione più accurata, definita in base
+ all'interazione che tali visualizzazioni permettono agli studenti.
+ Il risultato del gruppo di lavoro su 
 \begin_inset Quotes eld
 \end_inset
 
@@ -158,9 +152,9 @@ Improving the Educational Impact of Algorithm Visualization
 \begin_inset Quotes erd
 \end_inset
 
- (Giugno 2002, ITiCSE, Denmark) stata la suddivisione in 6 categorie delle
- varie forme di insegnamento in base al supporto di visualizzazione utilizzato,
- riportata in 
+ (Giugno 2002, ITiCSE, Denmark) è stata la suddivisione in sei categorie
+ delle tecniche di insegnamento classificate in base al supporto di visualizzazi
+one utilizzato (riportata in 
 \begin_inset ERT
 status open
 
@@ -173,58 +167,59 @@ cite{AV-compare}
 
 \end_inset
 
-: 
+): 
 \end_layout
 
 \begin_layout Enumerate
-No viewing (come lo traduco??), gli studenti non hanno a disposizione nessun
- supporto visivo, (o al massimo immagini non animate);proprio 
+Nessuna visualizzazione (No viewing), gli studenti non hanno a disposizione
+ nessun supporto visivo, o solamente immagini non animate, illustrazioni
+ del libro;
 \end_layout
 
 \begin_layout Enumerate
-Viewing, osservazione passiva dell'esecuzione dell'algoritmo, in cui possibile
- al massimo controllare il flusso di esecuzione tramite comandi di undo
- - redo - rewind....
- 
+Visualizzazione (Viewing), osservazione passiva dell'esecuzione dell'algoritmo,
+ in cui possibile in alcuni casi controllarne il flusso di esecuzione tramite
+ comandi di avanti - indietro;
 \end_layout
 
 \begin_layout Enumerate
-Responding, come per viewing consiste nell'osservazione della rappresentazione
- dell'algoritmo, durante la quale allo studente richiesto di rispondere
- ad una serie di domande, o svolgere esercizi su carta, relativi all'argomento
- presentato.
- 
+Rispondere (Responding), come per il punto precedente, consiste nell'osservazion
+e della rappresentazione animata dell'algoritmo, durante la quale allo studente
+ è richiesto di rispondere ad una serie di domande, o svolgere esercizi
+ su carta, relativi all'argomento presentato;
 \end_layout
 
 \begin_layout Enumerate
-Changing, modificare la visualizzazione principalmente attraverso la personalizz
-azione dei dati in ingresso all'algoritmo, in modo da analizzare il comportament
-o dell'algoritmo nei vari casi.
- 
+Cambiare (Changing), modificare la visualizzazione principalmente attraverso
+ la personalizzazione dei dati in ingresso dell'algoritmo, in modo da analizzare
+ il comportamento dell'algoritmo nei vari casi testati;
 \end_layout
 
 \begin_layout Enumerate
-Constructing, costruire la propria visualizzazione dell'algoritmo che si
- sta studiando 
+Costruire (Constructing), costruire la propria animazione di un particolare
+ algoritmo che si sta studiando con l'aiuto fornito dai programmi messi
+ a disposizione;
 \end_layout
 
 \begin_layout Enumerate
-Presenting, presentare ad un pubblico la visualizzazione di un particolare
- algoritmo, per poi procedere ad una discussione sull'argomento.
+Presentare (Presenting), pianificare lezioni nelle quali gli studenti debbano
+ presentare ad un pubblico la visualizzazione di un particolare algoritmo,
+ possibilmente creata da loro secondo il punto 5, per poi procedere ad una
+ discussione sull'argomento.
  
 \end_layout
 
 \begin_layout Standard
-I risultati delle tipologie di insegnamento appena riportate sono soggetto
- di numerosi studi presenti e passati, e una sinteri dei risulati raccolti
- presente nella 
+I risultati ottenuti delle diverse tipologie di insegnamento appena riportate
+ sono oggetto di numerosi studi presenti e passati, e una sintesi dei dati
+ raccolti è presente nella sezione 
 \begin_inset CommandInset ref
 LatexCommand ref
 reference "sec:studi-effettuati-sull'efficacia"
 
 \end_inset
 
-
+.
 \end_layout
 
 \begin_layout Section
@@ -234,19 +229,19 @@ name "sec:studi-effettuati-sull'efficacia"
 
 \end_inset
 
-Studi effettuati sull'efficacia degli AV nell'insegnamento
+Utilizzo di AV nell'insegnamento
 \end_layout
 
 \begin_layout Standard
 A seguito della classificazione delle tipologie di insegnamento dei corsi
  riguardanti Algoritmi e Strutture Dati, e la loro interazione con le tecnologie
  di visualizzazione algoritmi, sono stati effettuati numerosi studi a proposito
- dell'efficacia dell'introduzione di queste nuove tecniche sull'apprendimento
+ dell'efficacia dell'introduzione di queste nuovi metodi sull'apprendimento
  degli studenti.
 \end_layout
 
 \begin_layout Standard
-Un'analisi generale riportata in 
+Un'analisi generale è riportata in 
 \begin_inset ERT
 status open
 
@@ -273,11 +268,11 @@ cite{byrne}
 
 \end_inset
 
- hanno riportato gli studenti analizzati che hanno utilizzato un supporto
+ ha riportato che gli studenti analizzati che hanno utilizzato un supporto
  alle lezioni di tipo 3(responding) e 5(construction), hanno ottenuto risultati
  migliori nei test, rispetto ad altri studenti che non ne avevano fatto
  uso, o che avevano utilizzato una semplice animazione (livello 2).
- Nello studio 
+ I risultati sono però in conflitto con quelli raccolti nello studio 
 \begin_inset ERT
 status open
 
@@ -290,14 +285,14 @@ cite{jarc}
 
 \end_inset
 
- sono stati raccolti invece risultati in conflitto con i primi.
- Secondo quest'ultimo, non c'è stata nessuna differenza significati nei
- risultati ottenuti dagli studenti con l'una o l'altra tipologia di supporto
- alle lezioni.
+.
+ Secondo quest'ultimo, non è stata evidenziata alcuna differenza significante
+ nei risultati agli esami ottenuti dagli studenti con l'una o l'altra tipologia
+ di supporto alle lezioni.
 \end_layout
 
 \begin_layout Standard
-Lo studio riportato in 
+L'analisi i cui risultati sono riportati in 
 \begin_inset ERT
 status open
 
@@ -310,30 +305,34 @@ cite{AV-compare}
 
 \end_inset
 
- mette in risalto il miglioramento degli studenti, a seconda della tecnica
- di supporto visivo utilizzata, tenendo anche conto anche delle conoscenze
- precedenti dei soggetti.
- Gli studenti, provenienti da 3 diverse universit, sono stati soggetti di
- un pre-test, nel quale venivano valutate le loro conoscenze e attitudini,
- prima delle lezioni.
- A seconda dei risultati, sono stati divisi in tre gruppi per ognuno dei
- quali sono state effettuate una serie di lezioni sull'argomento degli algoritmi
- di ordinamento con l'utilizzo di 3 diverse tecniche: 
+, mette in risalto il miglioramento degli studenti, in base alla tecnica
+ di supporto interattivo utilizzata, tenendo anche in considerazione le
+ conoscenze precedenti dei soggetti riguardo l'argomento affrontato.
+ I soggetti, provenienti da 3 diverse università, sono stati messi a confronto
+ con un pre-test, nel quale venivano valutate le loro conoscenze e attitudini,
+ prima di affrontare le lezioni.
+ A seconda dei risultati, sono stati divisi in tre gruppi, e per ognuno
+ dei quali sono state effettuate una serie di incontri sull'argomento degli
+ algoritmi di ordinamento con l'utilizzo di 3 diversi metodi: 
 \end_layout
 
 \begin_layout Enumerate
-Lezioni frontali senza supporti visivi 
+Lezioni frontali senza supporti visivi.
+ Gli studenti di questo gruppo sono stati quelli che hanno ottenuto un punteggio
+ alto nel pre-test, ovvero erano i soggetti con maggiori conoscenze e potenziali
+tà;
 \end_layout
 
 \begin_layout Enumerate
 Lezioni frontali con l'utilizzo da parte del docente di una presentazione
- e di un tool di visualizzazione di algoritmi 
+ in lucidi e di un tool di visualizzazione di algoritmi;
 \end_layout
 
 \begin_layout Enumerate
-Lezioni frontali (come gruppo 2) con l'aggiunta di ore supplementari di
- attivit di laboratorio, in cui gli studenti potevano utilizzare singolarmente
- un'applicazione (JHAVE' 
+Lezioni frontali (come per il gruppo 2) con l'aggiunta di ore supplementari
+ nelle quali si svolgeva l'attività di laboratorio, in cui gli studenti
+ avevano la possibilità di utilizzare singolarmente un'applicazione (JHAVÈ
+ 
 \begin_inset ERT
 status open
 
@@ -346,14 +345,14 @@ cite{JHAVE}
 
 \end_inset
 
-) che permette di osservare l'animazione degli algoritmi integrata con domande
- ad-hoc.
+) che permette di osservare l'animazione degli algoritmi, integrata con
+ domande ad-hoc.
  
 \end_layout
 
 \begin_layout Standard
-A seguito di queste attivit, gli studenti sono stati esaminati con un test
- uguale per tutti.
+A seguito di queste attività, gli studenti sono stati esaminati con un test
+ di verifica uguale per tutti i gruppi.
 \end_layout
 
 \begin_layout Standard
@@ -370,14 +369,15 @@ cite{byrne}
 
 \end_inset
 
- in quanto rapportando le conoscenze iniziali degli studenti con gli esiti
- dei test di verifica, si osservato che maggiore l'interazione con lo strumento
- di supporto, maggiori sono i progressi ottenuti dagli studenti.
+ in quanto, rapportando le conoscenze iniziali degli studenti con gli esiti
+ dei test di verifica, si è osservato che maggiore è stata l'interazione
+ con lo strumento di supporto, maggiori sono stati i progressi ottenuti
+ dai soggetti.
 \end_layout
 
 \begin_layout Standard
-A seguito di questo studio si quindi potuto supporre che i risultati non
- significativi di 
+Con i risultati ottenuti in questa ricerca, si è quindi potuto concludere
+ che i risultati non significativi di 
 \begin_inset ERT
 status open
 
@@ -390,21 +390,51 @@ cite{jarc}
 
 \end_inset
 
- fossero dovuti ad un'inadeguata tecnica di raccolta: nel caso delle domande
+ fossero dovuti ad un'inadeguata tecnica di raccolta: nel caso delle domande,
  gli studenti, lasciati liberi a se stessi e non confinati in un laboratorio,
- hanno affrontato il tool come un gioco e non come uno strumento educativo.
+ hanno affrontato l'attività come un gioco e non come uno strumento educativo.
+ Sottoponendoli ad una maggiore concentrazione in un lasso di tempo determinato
+ e ristretto, i soggetti dello studio 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{AV-compare}
+\end_layout
+
+\end_inset
+
+ hanno invece ottenuto risultati positivi.
 \end_layout
 
 \begin_layout Standard
-Per quanto riguarda la categoria di applicazioni 6 (presentig), purtroppo
- non sono ancora presenti studi che indichino l'efficacia di tale tecnica
+Per quanto riguarda i programmi della categoria 6 (presentig), non sono
+ purtroppo ancora presenti studi che indichino l'efficacia di tale tecnica
  di insegnamento.
 \end_layout
 
 \begin_layout Standard
-[Aggiungere testimonianza corso di studi algoritmie strutture dati in cui
- sono state adoperate le tecniche sopra, obbligando gli studenti, che le
- hanno trovate utili e il 65% ha passato l'esame al primo colpo]
+Sono inoltre presenti testimonianze di corsi universitari di Algoritmi e
+ Strutture dati 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+cite{course}
+\end_layout
+
+\end_inset
+
+ in cui le tecniche di visualizzazione di algoritmi sono state integrate
+ completamente nel programma di studi.
+ Si è inoltre verificato che gran parte degli studenti che hanno partecipato
+ alle lezioni del corso, hanno superato l'esame fin dal primo appello.
 \end_layout
 
 \begin_layout Section
@@ -425,15 +455,16 @@ cite{wikiAlgoViz}
 
 \end_inset
 
- costituisce il sito di riferimento per studenti docenti e chiunque altro
+ costituisce il sito di riferimento per studenti, docenti e chiunque altro
  sia interessato nella ricerca di un'applicazione che raccolga visualizzazioni
  di algoritmi, o l'animazione di una particolare struttura.
- Dal 2006 il sito raccoglie in un proprio archivio (continuamente aggiornato)
+ Dal 2006 il sito cataloga in un proprio archivio (aggiornato settimanalmente)
  tutte gli strumenti rintracciabili sul web relativi a questo argomento.
- Tale sito stato anche il punto di partenza di questa tesi, in quanto ha
- permesso di esplorare e analizzare i principali toolkit per sviluppatori
- presenti al momento, e inoltre contiene un'interessante guida per chi si
- appresta a realizzare una propria visualizzazione di algoritmi.
+ Tale sito è stato anche il punto di partenza di questa tesi, in quanto
+ ha permesso di esplorare e analizzare i principali pacchetti software per
+ sviluppatori presenti al momento, ed inoltre contiene un'interessante guida
+ dedicata a chi si appresta a realizzare una propria visualizzazione di
+ algoritmi.
 \end_layout
 
 \begin_layout Standard
@@ -463,7 +494,7 @@ status collapsed
 \end_inset
 
  fare in modo che l'utente partecipi attivamente durante l'animazione dell'algor
-itmo, evitando le presentazioni statiche e passive 
+itmo, evitando le presentazioni statiche e passive;
 \end_layout
 
 \begin_layout Description
@@ -488,15 +519,13 @@ status collapsed
 
 \end_inset
 
- ridurre la complessit dell'applicazione, a partire dall'interfaccia grafica.
+ ridurre la complessità dell'applicazione, a partire dall'interfaccia grafica.
  Per quanto riguarda l'esposizione dei concetti, nascondere per quanto possibile
- i dettagli implementativi degli algoritmi, e animare le i singoli passi
- operazioni pi complesse.
- L'applicazione inoltre deve essere talmente semplice da necessitare di
- una minima documentazione relativa al proprio funzionamento, in quanto
- l'utente deve riuscire ad avviarla e comprenderne l'utilizzo fin dal primo
- avvio.
- 
+ i dettagli implementativi degli algoritmi, ed animare i singoli passi per
+ le operazioni più complesse.
+ L'applicazione inoltre deve essere talmente semplice da aver bisogno di
+ una documentazione minima relativa al proprio funzionamento, poichè l'utente
+ deve riuscire ad avviarla e comprenderne l'utilizzo fin dal primo avvio;
 \end_layout
 
 \begin_layout Description
@@ -570,13 +599,14 @@ status collapsed
 \end_inset
 
  se si tratta di una semplice rappresentazione animata dell'esecuzione di
- un programma su di una struttura dati, fondamentale permettere allo studente
+ un programma su di una struttura dati, è fondamentale permettere allo studente
  di controllare il flusso dell'animazione attraverso una serie di comandi,
- quali il controllo della velocit (nel caso si parli di un'animazione continua),
- possibilit di procedere passo-passo, andare avanti e indietro nell'animazione.
- Algoviz riporta che l'utilizzo dell'animazione spezzata in passi, produce
+ come la gestione della velocità (nel caso si parli di un'animazione continua),
+ la possibilità di procedere passo-passo e di andare avanti e indietro nell'anim
+azione.
+ Algoviz riporta che l'utilizzo dell'animazione spezzata in passaggi, riscontra
  risultati migliori nell'apprendimento rispetto ad una visualizzazione continua
- del funzionamento.
+ delle azioni.
  
 \end_layout
 
@@ -606,25 +636,26 @@ cite{AlgoViz}
 
  redatta dal gruppo di lavoro di Algoviz, illustra il lavoro di raccolta
  di AV da essi realizzato nel 2006: sono stati trovati circa 350 AV all'epoca,
- che sono quindi stati raccolti e classificati nel catalogo presente nel
- sito, il quale settimanalmente aggiornato e ad oggi contiene pi di 500
- visualizzazioni.
- Gran parte degli strumentu catalogati riguarda gli argomenti principali
- dell'insegnamento di Algoritmi e Strutture dati, primo fra tutti il problema
- dell'ordinamento, al quale seguono le strutture di ricerca (ABR) strutture
- lineari e gli algoritmi sui grafi.
+ che quindi sono stati raccolti e classificati all'interno del catalogo
+ presente nel sito aggiornato settimanalmente.
+ Ad oggi contiene più di 500 visualizzazioni.
+ Gran parte degli strumenti catalogati riguarda gli argomenti principali
+ affrontati nell'insegnamento di Algoritmi e Strutture dati, primo fra tutti
+ il problema dell'ordinamento, al quale seguono le strutture di ricerca
+ (Alberi Binari di Ricerca in particolare), le strutture lineari e gli algoritmi
+ che operano sui grafi.
 \end_layout
 
 \begin_layout Standard
 A partire da questa raccolta, si sono analizzati i principali pacchetti
- che potenzialmente costituivano un punto di partenza per altri sviluppatori
+ che potenzialmente costituivano un punto di partenza per altri sviluppatori,
  dal quale partire per creare la propria applicazione di animazione di algoritmi.
  Gran parte delle applicazioni raccolte consistono in passive rappresentazioni
  di algortimi che agiscono su strutture dati preinstallate (quindi non personali
-zzabili) nelle quali l'utente coinvolto solo per quanto riguarda il controllo
- del flusso.
- Esistono per alcune eccezioni, in cui tale rappresentazione arricchita
- con funzionalit interessanti che catturano e focalizzano meglio l'attenzione
+zzabili) durante le quali l'utente coinvolto solo per quanto riguarda il
+ controllo del flusso.
+ Esistono però alcune eccezioni, in cui tale rappresentazione viene arricchita
+ con funzionalità interessanti che catturano e focalizzano meglio l'attenzione
  dello studente sull'argomento.
 \end_layout
 
@@ -632,8 +663,8 @@ zzabili) nelle quali l'utente coinvolto solo per quanto riguarda il controllo
 Di seguito sono descritti alcuni dei principali pacchetti che sono stati
  analizzati durante la ricerca.
  Molti altri software sono stati esaminati, ma in questa circostanza non
- vengono riportati, in quanto sono risultati presentare caratteristiche
- molto simili a quelle dei programmi che ora verranno esposti.
+ sono riportati, poichè sono risultati presentare caratteristiche molto
+ simili a quelle dei programmi che ora verranno introdotti.
  
 \end_layout
 
@@ -672,66 +703,20 @@ cite{Animal}
 
 \end_inset
 
- fornisce 
+ è un'applicazione java che permette di osservare l'animazione di un particolare
+ problema, corredata da un'adeguata e ricca documentazione (anch'essa animata)
+ sull'argomento affrontato.
+ Nel pacchetto si trovano pre-installate diverse presentazioni.
+ L'utente ha comunque la possibilità di creare la propria animazione.
+ In questo caso si offre al docente la possibilità di arricchire le proprie
+ lezioni frontali con presentazioni animate dell'algoritmo.
 \end_layout
-
-\begin_layout Description
-\begin_inset ERT
-status collapsed
 
 \begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-JHAVE'
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- pacchetto migliore, classificato al 2 posto, in quanto non si capice come
- modificarlo e le domande fanno cagare 
-\end_layout
-
-\begin_layout Description
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-{
-\end_layout
-
-\end_inset
-
-MatrixPro
-\begin_inset ERT
-status collapsed
-
-\begin_layout Plain Layout
-
-}
-\end_layout
-
-\end_inset
-
- e Trackla2, vedi seguito 
-\end_layout
-
-\begin_layout Standard
 \begin_inset ERT
 status open
 
 \begin_layout Plain Layout
-
 
 \backslash
 begin{figure}[htbp]
@@ -739,13 +724,11 @@ begin{figure}[htbp]
 
 \begin_layout Plain Layout
 
-
 \backslash
 centering
 \end_layout
 
 \begin_layout Plain Layout
-
 
 \backslash
 includegraphics[scale=0.25]{images/Animal_screenshot.png}
@@ -753,21 +736,65 @@ includegraphics[scale=0.25]{images/Animal_screenshot.png}
 
 \begin_layout Plain Layout
 
-
 \backslash
 caption{Screenshot di Animal}
 \end_layout
 
 \begin_layout Plain Layout
 
-
 \backslash
 end {figure}
 \end_layout
 
-\begin_layout Plain Layout
+\end_inset
+
 
 \end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+JHAVÈ
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ è un'applicazione web, le cui presentazioni sono salvate all'interno di
+ parcticolari server.
+ Apparentemente molto simile ad Animal, JHAVÈ offre allo studente una serie
+ di funzioni aggiuntive molto interessanti, che ne migliorano sicuramente
+ il coinvolgimento.
+ Tra queste troviamo per prima cosa la scelta del tipo di dati in ingresso
+ desiderati: generati casualmente dal programma, o inseriti personalmente
+ dall'utente.
+ Come per Animal l'animazione è ben documentata, in questo caso con l'aggiunta
+ dello pseudocodice relativo all'algoritmo.
+ Inoltre, l'animazione è interrotta (con frequenza variabile) da domande
+ in linea con l'argomento affrontato che coinvolgono direttamente i dati
+ inseriti per l'animazione.
+ Lo studente è invitato a rispondere alle domande per poter proseguire nell'anim
+azione.
+ Date le sua caratteristiche, si può concludere che JHAVÈ si colloca a livello
+ 4 (changing) nella catalogazione delle visualizzazioni.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
@@ -804,13 +831,38 @@ caption{Screenshot di JHAVE}
 end{figure}
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+\begin_inset ERT
+status collapsed
+
 \begin_layout Plain Layout
 
+{
 \end_layout
 
 \end_inset
 
+MatrixPro
+\begin_inset ERT
+status collapsed
 
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+ e Trackla2.
+ Il software dalle funzioni più interessanti.
+ Si colloca a livello 5 (constructing).
+ Le sue caratteristiche sono descritte in maggiore dettaglio nel capitolo
+ seguente.
 \end_layout
 
 \end_body
