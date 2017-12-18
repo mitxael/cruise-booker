@@ -1,3 +1,6 @@
+![solarized palette](https://github.com/altercation/solarized/raw/master/img/solarized-palette.png)
+![Alt text](https://github.com/mitxael/cruise-booker/blob/master/res/bg_cruise.jpg?raw=true "Optional Title")
+    
     ***************************************************************************************
     * Abstract:   Booking system for a Cruise line
     * Uses:       This library has been created using:
@@ -12,8 +15,6 @@
     * Description:
     *             - This project allows to manage the booking system of a Cruice line,
     *               including predefined itineraries, cabins , extra services, etc.
-    
-    ![Alt text](/cruise-booker/blob/master/res/bg_cruise.jpg?raw=true "Optional Title")
     
     ********************************* START LICENSE BLOCK *********************************
     * The MIT License (MIT)
