@@ -1,4 +1,6 @@
-![Cruise Booker](https://github.com/mitxael/cruise-booker/blob/master/res/bg_cruise.jpg?raw=true "Cruise Booker")
+<p align="left">
+<img width="70%" height="70%" src="https://github.com/mitxael/cruise-booker/blob/master/screenshot_cruisebooker_01.png">
+</p>
     
     ***************************************************************************************
     * Abstract:   Booking system for a Cruise line
