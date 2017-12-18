@@ -1,5 +1,5 @@
 <p align="left">
-<img width="70%" height="70%" src="https://github.com/mitxael/cruise-booker/blob/master/screenshot_cruisebooker_01.png">
+<img width="60%" height="60%" src="https://github.com/mitxael/cruise-booker/blob/master/screenshot_cruisebooker_01.png">
 </p>
     
     ***************************************************************************************
