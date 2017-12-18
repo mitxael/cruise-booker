@@ -12,6 +12,9 @@
     * Description:
     *             - This project allows to manage the booking system of a Cruice line,
     *               including predefined itineraries, cabins , extra services, etc.
+    
+    ![Alt text](/cruise-booker/blob/master/res/bg_cruise.jpg?raw=true "Optional Title")
+    
     ********************************* START LICENSE BLOCK *********************************
     * The MIT License (MIT)
     * Copyright (C) 2015 Michael Vasquez Otazu
