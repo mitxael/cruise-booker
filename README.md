@@ -1,5 +1,4 @@
-![solarized palette](https://github.com/altercation/solarized/raw/master/img/solarized-palette.png)
-![Alt text](https://github.com/mitxael/cruise-booker/blob/master/res/bg_cruise.jpg?raw=true "Optional Title")
+![Cruise Booker](https://github.com/mitxael/cruise-booker/blob/master/res/bg_cruise.jpg?raw=true "Cruise Booker")
     
     ***************************************************************************************
     * Abstract:   Booking system for a Cruise line
